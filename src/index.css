@@ -1,0 +1,7 @@
+:root { font-family: Arial, Helvetica, sans-serif; color: #f3f4f6; background: #080a0d; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font-family: inherit; }
+button:focus-visible, a:focus-visible { outline: 2px solid #ff4968; outline-offset: 5px; }
+::selection { background: #bb0a30; color: white; }

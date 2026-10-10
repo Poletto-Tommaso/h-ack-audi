@@ -1,0 +1,1 @@
+Local experience assets belong here. The introduction uses procedural geometry and canvas-rendered text; no vehicle models, HDR maps, or external fonts are needed. Default XR controller models load from the library's WebXR input-profile CDN.

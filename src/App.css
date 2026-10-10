@@ -1,0 +1,58 @@
+.experience { min-height: 100svh; position: relative; overflow: hidden; background: #080a0d; }
+.masthead { height: 108px; padding: 0 5%; display: flex; align-items: center; gap: 30px; position: relative; z-index: 2; }
+.brand { color: white; width: 98px; display: flex; }
+.brand svg { width: 100%; }
+.project-name { font-size: 11px; letter-spacing: .23em; padding-left: 28px; border-left: 1px solid #404348; }
+.prototype-label { margin-left: auto; color: #9a9fa7; font-size: 9px; letter-spacing: .18em; display: flex; gap: 10px; align-items: center; }
+.prototype-label i { width: 5px; height: 5px; border-radius: 50%; background: #df1436; }
+.introduction { position: relative; z-index: 2; width: 46%; padding: 56px 0 72px 5%; pointer-events: none; }
+.introduction button { pointer-events: auto; }
+.eyebrow { font-size: 10px; letter-spacing: .2em; color: #c5c8ce; margin: 0 0 32px; }
+.eyebrow span { color: #e72648; margin-right: 22px; }
+h1 { font-weight: 400; font-size: clamp(40px, 4.1vw, 68px); line-height: 1.13; letter-spacing: -.045em; margin: 0 0 27px; }
+h1 em { font-style: normal; color: #9299a5; }
+.intro-copy { max-width: 330px; color: #9ea4af; font-size: 14px; line-height: 1.85; margin: 0 0 32px; }
+.actions { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+.vr-action { width: min(320px, 95%); }
+.vr-button { background: #f3f4f6; color: #101114; width: 220px; min-height: 52px; display: flex; align-items: center; gap: 15px; padding: 0 22px; border: 1px solid #f3f4f6; font-size: 11px; letter-spacing: .12em; cursor: pointer; }
+.vr-button svg { width: 22px; height: 18px; }
+.vr-button > span { margin-left: auto; font-size: 20px; }
+.vr-button:hover:enabled { background: #fff; box-shadow: 0 0 24px #ffffff1a; }
+.vr-button:disabled { background: #25282e; border-color: #3d4149; color: #b0b6c0; cursor: not-allowed; }
+.vr-status { font-size: 11px; line-height: 1.65; color: #a2a9b4; margin: 10px 0 0; }
+.desktop-button { border: 0; background: none; padding: 8px 0; color: #f1f2f4; font-size: 12px; cursor: pointer; }
+.desktop-button span { margin-left: 28px; }
+.desktop-button:hover { color: #ff5572; }
+.device-note { font-size: 10px; color: #7f8793; margin-top: 20px; }
+.scene-viewport { position: absolute; top: 108px; right: 0; width: 58%; height: calc(100% - 295px); min-height: 450px; }
+.scene-viewport::before { content: ''; position: absolute; inset: 0 auto 0 0; width: 8%; z-index: 1; pointer-events: none; background: linear-gradient(90deg, #080a0d, transparent); }
+.scene-caption { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); display: flex; gap: 11px; align-items: flex-start; width: max-content; max-width: 85%; pointer-events: none; }
+.status-dot { width: 5px; height: 5px; background: #818b9d; border-radius: 50%; margin-top: 5px; }
+.status-dot.active { background: #ff2446; box-shadow: 0 0 12px #ff2446; }
+.scene-caption strong { font-size: 11px; font-weight: 400; color: #c5ccd8; }
+.scene-caption p { font-size: 10px; color: #7f899a; margin: 7px 0 0; }
+.coordinate { position: absolute; right: 8%; top: 20px; font-size: 8px; letter-spacing: .16em; color: #77808d; }
+.journey { margin: 0 5%; border-top: 1px solid #292d34; position: relative; z-index: 2; padding-top: 22px; }
+.journey-label { display: flex; justify-content: space-between; font-size: 9px; letter-spacing: .16em; color: #858e9c; }
+.journey-label > span { color: #c8cdd5; }
+.journey ol { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); margin: 28px 0 24px; gap: 20px; }
+.journey li { display: flex; flex-wrap: wrap; gap: 10px; border-top: 1px solid #2b3039; padding-top: 14px; color: #87909e; font-size: 11px; }
+.journey li.current { border-color: #e01c3d; color: #f3f4f6; }
+.chapter-number { font-size: 9px; color: #8992a0; }
+.current .chapter-number { color: #f82c50; }
+.chapter-soon { width: 100%; font-size: 7px; letter-spacing: .13em; color: #727c8b; margin-left: 23px; }
+.prototype-note { color: #6d7683; font-size: 8px; letter-spacing: .15em; padding-bottom: 18px; }
+.canvas-fallback { position: absolute; z-index: 3; inset: 25%; color: #c3c9d2; font-size: 14px; line-height: 1.8; text-align: center; }
+.is-immersive .desktop-ui { visibility: hidden; }
+.is-immersive .scene-viewport { inset: 0; width: 100%; height: 100%; }
+@media (min-width: 1500px) { .introduction { padding-top: 9vh; padding-bottom: 9vh; } }
+@media (max-width: 850px) {
+ .masthead { height: 86px; gap: 18px; } .brand { width: 80px; }
+ .project-name { padding-left: 18px; font-size: 9px; } .prototype-label { display: none; }
+ .introduction { width: 100%; padding: 35px 6% 0; } h1 { font-size: clamp(40px, 7vw, 56px); }
+ .intro-copy { max-width: 420px; }
+ .scene-viewport { position: relative; top: auto; width: 100%; height: 480px; min-height: 0; }
+ .scene-caption { bottom: 20px; } .coordinate { top: 25px; }
+ .journey { margin-top: 0; } .journey ol { grid-template-columns: repeat(5, 1fr); gap: 10px; }
+ .journey li { font-size: 9px; flex-direction: column; gap: 7px; } .chapter-soon { margin: 0; font-size: 6px; }
+}
