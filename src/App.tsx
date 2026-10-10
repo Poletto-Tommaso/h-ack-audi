@@ -1,52 +1,40 @@
-import { useState } from 'react'
+import { Suspense, lazy } from 'react'
 import { AudiRings } from './components/AudiRings'
-import { ExperienceCanvas } from './components/ExperienceCanvas'
 import { EnterVRButton } from './components/EnterVRButton'
+import { JourneyPanel } from './components/JourneyPanel'
 import { chapters } from './data/chapters'
 import { useXRSession } from './hooks/useXRSession'
+import { JourneyProvider, useJourney } from './state/JourneyContext'
+import { getPortal } from './data/portals'
+import { formatBudget } from './logic/budget'
 import './App.css'
 
-export default function App() {
-  const [awakened, setAwakened] = useState(false)
+const ExperienceCanvas = lazy(() => import('./components/ExperienceCanvas').then((module) => ({ default: module.ExperienceCanvas })))
+
+function JourneyApp() {
+  const { state } = useJourney()
   const { isPresenting } = useXRSession()
-  return (
-    <main className={`experience ${isPresenting ? 'is-immersive' : ''}`}>
-      <header className="masthead desktop-ui">
-        <a className="brand" href="./" aria-label="Audi — Find your drive"><AudiRings /></a>
-        <span className="project-name">FIND YOUR DRIVE</span>
-        <span className="prototype-label"><i /> AN IMMERSIVE EXPERIENCE</span>
-      </header>
-      <section className="introduction desktop-ui" aria-labelledby="intro-title">
-        <p className="eyebrow"><span>01 / 05</span> THE ORIGIN</p>
-        <h1 id="intro-title">Before the road.<br />Before the car.<br /><em>There is you.</em></h1>
-        <p className="intro-copy">A journey beyond specifications. Explore what moves you, and discover where it could take you.</p>
-        <div className="actions">
-          <EnterVRButton />
-          <button className="desktop-button" onClick={() => setAwakened((value) => !value)}>
-            {awakened ? 'Reset experience' : 'Explore on desktop'} <span aria-hidden="true">↗</span>
-          </button>
-        </div>
-        <p className="device-note">Designed for Meta Quest. Open to your curiosity.</p>
+  const current = chapters.findIndex((chapter) => chapter.id === state.scene)
+  return <main className={`experience ${isPresenting ? 'is-immersive' : ''}`}>
+    <header className="masthead desktop-ui">
+      <a className="brand" href="./" aria-label="Audi — Find your drive"><AudiRings /></a>
+      <span className="project-name">FIND YOUR DRIVE</span>
+      <span className="prototype-label"><i /> INTERACTIVE PROTOTYPE</span>
+    </header>
+    <div className="experience-body">
+      <JourneyPanel />
+      <section className="scene-viewport" aria-label="Interactive 3D journey">
+        <Suspense fallback={<div className="canvas-fallback" role="status">Loading your world…</div>}><ExperienceCanvas /></Suspense>
+        <div className="scene-caption desktop-ui"><span className="status-dot active" /><p>POINT. SELECT. DISCOVER.<small>Mouse or Quest controller · same journey</small></p></div>
       </section>
-      <section className="scene-viewport" aria-label="Interactive three-dimensional Audi introduction">
-        <ExperienceCanvas awakened={awakened} onActivate={() => setAwakened((value) => !value)} onReset={() => setAwakened(false)} />
-        <div className="scene-caption desktop-ui" aria-live="polite">
-          <span className={`status-dot ${awakened ? 'active' : ''}`} />
-          <div><strong>{awakened ? 'Your journey starts within.' : 'Every journey begins with a spark.'}</strong>
-            <p>{awakened ? 'You have awakened the origin. Select the rings to reset.' : 'Click the rings to awaken the origin.'}</p></div>
-        </div>
-        <span className="coordinate desktop-ui" aria-hidden="true">48°46′ N &nbsp; 11°25′ E · INGOLSTADT</span>
-      </section>
-      <footer className="journey desktop-ui">
-        <div className="journey-label">YOUR JOURNEY <span>01 — THE ORIGIN</span></div>
-        <ol>{chapters.map((chapter, index) => (
-          <li key={chapter.id} className={index === 0 ? 'current' : ''} aria-current={index === 0 ? 'step' : undefined}>
-            <span className="chapter-number">0{index + 1}</span><span>{chapter.title}</span>
-            {index > 0 && <span className="chapter-soon">COMING NEXT</span>}
-          </li>
-        ))}</ol>
-        <p className="prototype-note">AUDI · HACKATHON PROTOTYPE</p>
-      </footer>
-    </main>
-  )
+    </div>
+    <div className="session-bar desktop-ui"><EnterVRButton /><p>{state.portal ? getPortal(state.portal).title : 'YOUR JOURNEY STARTS WITHIN'}<span>{state.portal ? formatBudget(state.budget) : 'DESKTOP + META QUEST 3S'}</span></p></div>
+    <footer className="journey desktop-ui">
+      <ol>{chapters.map((chapter, index) => <li key={chapter.id} className={index === current ? 'current' : index < current ? 'complete' : ''} aria-current={index === current ? 'step' : undefined}><span className="chapter-number">0{index + 1}</span><span>{chapter.title}</span></li>)}</ol>
+      <p className="prototype-note">AUDI · FIND YOUR DRIVE · HACKATHON PROTOTYPE</p>
+    </footer>
+    <span className="sr-only" aria-live="polite">Scene {current + 1}: {chapters[current].title}{state.scene === 'discovery' ? `, question ${state.questionIndex + 1} of 4` : ''}</span>
+  </main>
 }
+
+export default function App() { return <JourneyProvider><JourneyApp /></JourneyProvider> }

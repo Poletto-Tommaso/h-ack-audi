@@ -1,7 +1,7 @@
 export const chapters = [
   { id: 'origin', title: 'The origin' },
-  { id: 'world', title: 'Find your world' },
-  { id: 'drive', title: 'Discover your drive' },
-  { id: 'audi', title: 'Find your Audi' },
-  { id: 'your-audi', title: 'Your Audi' },
+  { id: 'world', title: 'What drives you?' },
+  { id: 'budget', title: 'Set your budget' },
+  { id: 'discovery', title: 'Discover your drive' },
+  { id: 'result', title: 'Your Audi' },
 ] as const

@@ -1,113 +1,146 @@
 # AUDI — FIND YOUR DRIVE
 
-A React + TypeScript + Vite WebXR hackathon foundation for Meta Quest 3S and desktop. The repository was empty when inspected; there was no existing implementation or dependency manifest to replace.
+A functional five-scene React / TypeScript / Vite prototype for desktop and Meta Quest 3S. Step 1's XR store, VR entry/support handling, and architectural environment are retained. Step 2 adds a complete journey using lightweight procedural geometry and explicitly fictional matching data.
 
-Only **01 — THE ORIGIN** is interactive. Select the Audi rings to awaken the scene: the sculpture, portal, and floor accents turn red and the welcome message changes. Select again to reset. No vehicle recommendation or emotional profiling is implemented yet.
+## Run
 
-## Start locally
-
-Use Node **22.12+**, preferably Node 24 (`.nvmrc`), and npm. The lockfile records the installed versions; use `npm ci` for reproducible installs.
+Use Node **22.12+** (Node 24 recommended; `.nvmrc`) and npm.
 
 ```sh
-npm ci
+npm install
 npm run dev
 ```
 
-Open the Local URL printed by Vite, usually **http://localhost:5173**. If Node is installed through nvm but unavailable in your shell, load nvm and run `nvm use` first.
+Open the Local URL printed by Vite, normally **http://localhost:5173**. Use `npm ci` when installing exactly from the lockfile. If Node is installed through nvm, load nvm and run `nvm use` first.
+
+```sh
+npm run typecheck
+npm test
+npm run build
+npm run preview
+```
+
+The production build is generated in `dist/`. Public WebXR hosting requires trusted HTTPS. These commands do not publish or push anything.
+
+## The journey
+
+1. **THE ORIGIN** — “WELCOME TO AUDI.” / “Your journey starts here.” changes after 2.8 seconds to “WHAT DRIVES YOU?” / “Discover the Audi that moves you.” Select **START YOUR JOURNEY**. The ring sculpture remains interactive. The setting is abstract architecture, not a historically accurate reconstruction.
+2. **WHAT DRIVES YOU?** — Select one of four 3D portals: PERFORMANCE (circuit), COMFORT (panoramic road), EVERYDAY (city), E-MOTION (future). Each has its own color, geometry, and hover feedback.
+3. **SET YOUR BUDGET** — Use the slider, minus, or plus. Range €25,000–€150,000+, default €45,000, step €5,000. **CONTINUE** saves progress.
+4. **DISCOVER YOUR DRIVE** — Four questions for the selected portal, one at a time, with three answers each. All **16 approved questions and 48 answers are reproduced unchanged** in `src/data/questions.ts`. Select an answer, then **NEXT QUESTION** / **FIND MY AUDI**.
+5. **YOUR AUDI** — See a deterministic prototype suggestion, three personalized explanations, selected route/budget, and a generic vehicle blockout. No eligible candidate produces an explicit no-match state with **ADJUST BUDGET**.
+
+**EXPLORE YOUR AUDI** opens a 3D blockout with rotation and color controls. **EXPERIENCE YOUR DRIVE** opens a miniature road simulation with play/pause and lane controls. The viewer's camera remains stationary; movement starts only after pressing Play. Neither mode asserts the real model's design, specifications, or performance.
+
+**BACK** steps through individual questions and scenes; within exploration/preview it returns to the result. **RESTART** clears the journey to the initial state. React Context keeps route, budget, answers, and reveal controls synchronized between HTML and the 3D world. Re-selecting the same portal preserves answers; changing portal clears incompatible answers while keeping the budget. State persists across scene changes and VR entry/exit, **not page reloads**. There is no backend, analytics, or account.
 
 ## Desktop testing
 
-1. Open the page in a browser with WebGL and hardware acceleration enabled.
-2. Hover over the ring sculpture, then click it. The rings and surrounding accents should turn red; both the in-world text and the page caption should change.
-3. Click again to return to the original state. The **Explore on desktop / Reset experience** button provides the same action through a keyboard-accessible HTML control.
-4. Drag the scene to inspect it within a limited orbit. Pan and zoom are disabled.
-5. On a browser without an immersive headset, **ENTER VR** stays disabled and explains how to continue. Desktop mode remains usable.
-6. Resize to a narrow viewport. The introduction, 3D view, and chapter list should stack without horizontal scrolling.
+- Start a journey and select each portal in separate runs. All steps are selectable directly in 3D, or through the responsive, keyboard-accessible HTML controls.
+- Test hovering and clicking the 3D portals, then clicking/dragging the budget slider. Use minus/plus at the limits and check the €150,000+ display.
+- Check that Next is disabled before answering; go Back, edit an answer, and confirm it remains selected when revisiting.
+- At €45,000 or above, complete a route and inspect the prototype result, exploration, color controls, and play/pause/lane preview.
+- At €25,000, complete a route and confirm the honest no-match state. Adjust the budget and continue; previous answers remain available.
+- Select **BOOK A TEST DRIVE** with the default configuration and confirm a booking placeholder is displayed. No external page or completed booking is simulated.
+- Restart, resize the page, and use Tab/Enter to operate the HTML controls. On browsers without immersive VR, **ENTER VR** stays disabled with an explanatory message.
+- Drag the 3D view for a limited orbit. Controls reset between scenes and unmount in VR so tracking owns the camera.
 
-The XR library's built-in emulator is deliberately disabled so desktop users see genuine headset availability. A separately installed WebXR emulator can assist development, but cannot validate Quest performance or tracking.
+## Meta Quest 3S testing
 
-## Test on Meta Quest 3S
-
-### Wi-Fi and HTTPS
+### Wi-Fi / HTTPS
 
 ```sh
 npm run dev:quest
 ```
 
-1. Connect the computer and headset to the same Wi-Fi network. Allow the local Vite port through the computer's firewall if prompted.
-2. In **Meta Quest Browser**, open the **Network HTTPS URL** printed by Vite, for example `https://192.168.1.100:5173`. Plain HTTP on a LAN IP does not satisfy the secure-context requirement.
-3. This command generates a self-signed development certificate in Vite's ignored `node_modules/.vite` cache. The headset may show a certificate warning that the developer must handle manually for this local test. If the origin still fails the browser's secure-context check, use the USB method below or a site served with a trusted HTTPS certificate. Do not change browser security flags.
-4. Select **ENTER VR**, then grant the browser's immersive-session permission if requested.
-5. Look ahead. The scene uses a floor-level reference space with the sculpture roughly three metres ahead. Move your head to verify stereo rendering and positional tracking.
-6. With either Touch controller, aim the default ray at the rings and press/release the trigger. Check hover feedback, red activation, changed in-world instructions, and a second selection to reset.
-7. Aim at the in-world **RESET** and **EXIT VR** buttons. Also test ending VR through the Quest system menu, then entering again from the page.
-8. Deny one session request and verify that the error is shown on the page and retry remains possible.
+1. Connect the computer and headset to the same Wi-Fi. Allow the local Vite port through the computer's firewall if required.
+2. In **Meta Quest Browser**, open the printed **Network HTTPS URL**, e.g. `https://192.168.1.100:5173`. Plain HTTP on a LAN IP does not satisfy the secure-context requirement.
+3. The HTTPS plugin generates a self-signed development certificate in Vite's ignored `node_modules/.vite` cache. Handle the local certificate warning manually. If the browser still does not consider the origin secure, use USB localhost below or a trusted HTTPS host; do not disable browser security flags.
+4. Select **ENTER VR** and grant immersive-session access. Look around to check stereo rendering and positional tracking.
+5. Aim either controller ray at **START YOUR JOURNEY** and press/release the trigger. Complete portal selection, budget, all four questions, and the result **entirely inside VR**.
+6. On the slider, press/hold the trigger and move the ray along the track; also test point-and-select and the large minus/plus buttons. The slider captures a single pointer and projects its ray onto the track plane.
+7. Test Back, Restart, exploration rotation/color, and driving Play/Pause/Left/Right. Navigation is below the main panel. Test both controllers and verify hover remains correct when one ray leaves a target.
+8. Test €25,000 no-match recovery, exit using the in-world **EXIT VR** control, and re-entry. Also exit through the Quest system menu. State should survive session exit.
+9. Deny a session request once; confirm a visible error and retry. For a configured booking link in VR, follow the instruction to exit and open it from the HTML page.
 
-All essential instructions and reset/exit controls are rendered as 3D objects. They do not depend on a DOM overlay inside the headset.
+All required controls/instructions are 3D meshes and text textures. The experience does not depend on a DOM overlay in the headset.
 
 ### USB localhost alternative
 
-Enable Developer Mode and USB debugging on the headset, install Android Platform Tools, connect it over USB, and authorize the computer in the headset.
+Enable Developer Mode / USB debugging, install Android Platform Tools, connect the headset over USB, and authorize the computer in the headset.
 
 ```sh
 npm run dev
-# In a second terminal:
+# In another terminal:
 adb devices
 adb reverse tcp:5173 tcp:5173
 ```
 
-Open **http://localhost:5173** in Meta Quest Browser. Loopback is treated as a trustworthy origin; the reverse mapping forwards the headset's localhost to the computer. Replace both ports if Vite reports a different one. Use `chrome://inspect/#devices` on the computer to inspect the Quest tab and check console errors and frame timing.
+Open **http://localhost:5173** in Meta Quest Browser. Loopback is treated as a trustworthy origin; reverse mapping forwards the headset's localhost to the computer. Replace both ports if Vite uses a different port. Inspect the headset tab from `chrome://inspect/#devices` on the computer for console errors and frame timing.
 
-The USB workflow follows [Meta's browser debugging documentation](https://developers.meta.com/vr/documentation/web/browser-remote-debugging/). For Wi-Fi/headset setup, see [Meta's testing guide](https://developers.meta.com/vr/documentation/iwsdk/guides/02-testing-experience/).
+See [Meta's browser debugging workflow](https://developers.meta.com/vr/documentation/web/browser-remote-debugging/) and [headset testing guide](https://developers.meta.com/vr/documentation/iwsdk/guides/02-testing-experience/). For production-build HTTPS testing on Wi-Fi, use `npm run preview -- --mode quest`.
 
-## Commands and checks
+## Recommendation data — read before a demo
 
-```sh
-npm run typecheck     # Strict TypeScript checks for application and Vite configuration
-npm test              # Six automated VR-entry/session/fallback checks, simulated APIs
-npm run build         # TypeScript checks + production bundle in dist/
-npm run preview       # Serve the production build locally
+`src/logic/recommendation.ts` is a pure deterministic engine, separate from React and the scenes. `src/data/mockModels.ts` holds the user-supplied candidate names plus **fictional traits and synthetic eligibility tiers**. No candidate has a price field.
+
+The selected budget maps to an intentionally artificial demo tier:
+
+| Selected budget | Synthetic tier |
+| --- | --- |
+| €25,000–€30,000 | 0 — no candidates |
+| €35,000–€45,000 | 1 |
+| €50,000–€65,000 | 2 |
+| €70,000–€90,000 | 3 |
+| €95,000–€115,000 | 4 |
+| €120,000–€150,000+ | 5 |
+
+**These cutoffs are neither Audi prices nor price estimates.** They only exercise budget filtering and no-match behavior. Each candidate has a demo tier; the engine first filters by portal and tier, then scores overlap with traits from all four answers. Ties prefer the lower demo tier and then a stable ID. There is no random recommendation. The explanations quote the user's priorities; fictional matching traits must not be read as official model specifications.
+
+Every suggested result is marked **PROTOTYPE SUGGESTION / MOCK MATCH** and real affordability is explicitly unverified. A no-match is never replaced with an out-of-tier suggestion. Production matching must replace this dataset with verified, dated, market-specific models, trims, availability, and prices; compare actual budget eligibility before scoring preferences. The €150,000+ selection is open-ended, not a verified unlimited budget.
+
+## Booking configuration
+
+No verified official test-drive URL has been supplied, so the default action is a clearly labeled placeholder. No booking is made in this application.
+
+Copy `.env.example` to `.env.local` and fill all three values **only after manually verifying the official test-drive page for the chosen market**:
+
+```text
+VITE_AUDI_TEST_DRIVE_URL=
+VITE_AUDI_TEST_DRIVE_VERIFIED_ON=
+VITE_AUDI_TEST_DRIVE_SOURCE=
 ```
 
-For a headset test of the production build over Wi-Fi, use `npm run preview -- --mode quest`; this enables the same development HTTPS plugin. Public hosting requires trusted HTTPS and should serve `dist/`. No deployment or push is performed by these commands.
+`VERIFIED_ON` uses `YYYY-MM-DD`; `SOURCE` is the official page used for verification. The URL validator accepts HTTPS pages on `audi.com`, `audi.it`, `audi.de`, `audi.co.uk`, `audiusa.com`, or their subdomains. Other official market domains require an explicit allowlist update after verification. Merely passing the domain check is not a substitute for checking the page. Restart Vite after changing configuration.
 
-## Structure
+On desktop, a valid configured action opens the official page in a separate tab. In VR it displays instructions to exit and use the HTML action, avoiding invisible browser navigation during an immersive session. The official website owns any actual booking.
+
+## Structure and important files
 
 ```text
 src/
-  components/         Canvas, environment, rings, 3D labels/buttons, VR entry UI
-  scenes/
-    OriginScene.tsx             01 — THE ORIGIN (interactive foundation)
-    FindYourWorldScene.tsx      02 — FIND YOUR WORLD (placeholder)
-    DiscoverYourDriveScene.tsx  03 — DISCOVER YOUR DRIVE (placeholder)
-    FindYourAudiScene.tsx       04 — FIND YOUR AUDI (placeholder)
-    YourAudiScene.tsx           05 — YOUR AUDI (placeholder)
-    ScenePlaceholder.tsx       Shared placeholder presentation
-  hooks/              Browser VR availability and reactive session state
-  data/               Chapter metadata
-  logic/              Shared XR store and session configuration
-  assets/             Space for future local assets
-  App.tsx             Desktop experience shell and introduction state
-  main.tsx            React entry point
+  components/   Canvas, reusable 3D/HTML controls, portal vignettes, vehicle blockout
+  scenes/       Origin, portals, budget, questionnaire, result, exploration, driving preview
+  state/        JourneyContext.tsx — one shared provider above desktop UI and Canvas
+  data/         portals.ts, questions.ts, mockModels.ts, booking.ts, chapters.ts
+  logic/        journeyState.ts, budget.ts, recommendation.ts, xrStore.ts
+  hooks/        VR availability/session, pointer feedback, booking, intro timing
+  assets/       Space for future optimized local assets
+  App.tsx       Experience shell, XR entry and journey progress
+  main.tsx      React entry point
 ```
 
-The chapter list previews the intended journey; later chapters are not navigation links. Their placeholder components are ready to integrate when those chapters are implemented.
+`FindYourAudiScene.tsx` retains the old Step 1 export as an alias for the new questionnaire. The previous shared placeholder is retained but not used in the journey.
 
-## XR implementation and performance
+The existing `createXRStore`, `<XR store={xrStore}>`, `store.enterVR()`, and standard mesh pointer events follow the official [XR store](https://pmndrs.github.io/xr/docs/tutorials/store) and [interaction APIs](https://pmndrs.github.io/xr/docs/tutorials/interactions). No legacy `VRButton`, `Controllers`, or `Interactive` API is used. Existing dependency versions were retained and no new dependency was needed for Step 2.
 
-- Uses installed **@react-three/xr 6.6.31**, **Fiber 9.8.1**, **Drei 10.7.9**, **Three.js 0.186.1**, **React 19.3.0**, and **Vite 8.3.4**. See `package-lock.json` for exact dependency versions.
-- Follows the official [XR introduction](https://pmndrs.github.io/xr/docs/getting-started/introduction), [store API](https://pmndrs.github.io/xr/docs/tutorials/store), and [pointer interaction API](https://pmndrs.github.io/xr/docs/tutorials/interactions): a persistent `createXRStore`, `<XR store={xrStore}>`, `store.enterVR()` from a click gesture, default controller rays, and mesh `onClick` / pointer-over/out handlers shared with desktop.
-- Keeps the viewer stationary; no forced camera motion or artificial locomotion. Orbit controls unmount during immersive sessions so head tracking owns the camera.
-- Uses low-complexity procedural geometry, no shadows, no postprocessing, no HDR environment, and no vehicle models. Canvas-rendered labels avoid remote font downloads.
-- Caps desktop pixel ratio at 1.5. XR uses native framebuffer scale and maximum fixed foveation where supported. `frameRate: 'low'` requests the device's lowest advertised frame rate, targeting the usual Quest 72 Hz mode; actual support and sustained frame timing must be checked on hardware.
-- Hand tracking, AR/environment detection, anchors, layers, and DOM overlays are disabled for this controller-first prototype. Default controller models/profiles currently load from the library's jsDelivr CDN, so the headset needs internet access for their initial load. Self-host those profile assets before an offline demo.
+## Performance and verification
 
-## Verification and remaining work
+- Procedural low-poly geometry, no heavy assets, shadows, postprocessing, particles, or network fonts. Text uses local canvas textures that are disposed when replaced/unmounted.
+- Desktop DPR is capped at 1.5; its camera adjusts for narrow viewports. XR uses framebuffer scale 1 and maximum fixed foveation where supported. The store requests the lowest advertised device frame rate, usually targeting Quest's 72 Hz mode. Sustained frame time must be measured on hardware.
+- Hand tracking and AR/environment features remain disabled for this controller-first prototype. Controller models/profiles still load from the library's jsDelivr CDN on first use, so internet is needed initially. Self-host these assets before an offline event.
+- The 3D scene module loads separately, but Vite still warns about large Three.js/XR vendor chunks. The XR dependency emits optional emulator/room chunks; built-in emulation is disabled and those chunks are not requested in this runtime.
+- **22 automated tests pass**: six existing VR-support/session checks, five complete-journey/no-match UI checks, eight state/matching/booking checks, and three mouse/controller ray-projection checks. The engine test covers all **8,424 portal × budget × answer combinations**. These run with simulated WebXR and DOM APIs, not physical controllers or GPU rendering.
+- `npm install`, strict TypeScript checks, tests, the production build, and an HTTP smoke check of the built page/entry assets were run successfully. Browser visual QA remains blocked because Chrome computer-use access was not approved. No physical Quest is available here; stereo output, actual controller selection/dragging, readability, re-entry, and frame rate still require the manual checks above.
 
-Verified here: strict TypeScript check, production build, six automated tests, and an HTTP response from the Vite development server. Automated tests use simulated WebXR APIs; they do not exercise physical tracking or controller rays.
-
-Browser visual QA could not run because browser automation was unavailable and native Chrome access was denied. No physical Quest was connected, so stereo output, controller selection, headset re-entry, certificate handling, and sustained frame rate remain unverified. Use the manual checks above before presenting the prototype.
-
-Vite reports large JavaScript chunks. The initial 3D bundle includes Three.js/XR (~1.3 MB minified, ~360 KB gzip); the XR dependency also emits optional emulator/environment chunks even with emulation disabled. Those dynamic emulator chunks are not requested in the configured runtime. Further splitting or removing optional emulator build assets can be considered after measuring load time on the target device.
-
-Scenes 02–05, emotional discovery logic, recommendations, sound, vehicle assets, and production hosting are intentionally left for later tasks.
+Recommended next step: run the entire journey on Quest 3S, tune text/target placement and profile frame time, then integrate verified market data and optimized licensed vehicle assets.
