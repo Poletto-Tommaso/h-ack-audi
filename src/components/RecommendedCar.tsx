@@ -1,9 +1,12 @@
 import type { MockModel } from '../data/mockModels'
 import { getRecommendationAsset } from '../data/recommendationAssets'
 import { AudiCarModel } from './AudiCarModel'
-import { VehiclePlaceholder } from './VehiclePlaceholder'
+import type { ModelStatus } from './AudiCarModel'
+import { useXR } from '@react-three/xr'
 
-export function RecommendedCar({ model, rotation = 0, color }: { model: MockModel; rotation?: number; color?: string }) {
+export function RecommendedCar({ model, rotation = 0, onStatus, showStatusLabel = true }: { model: MockModel; rotation?: number; onStatus?: (status: ModelStatus) => void; showStatusLabel?: boolean }) {
+  const session = useXR(state => state.session)
   const asset = getRecommendationAsset(model.id)
-  return asset?.available ? <AudiCarModel vehicleId={asset.id} rotation={[0, rotation, 0]} /> : <VehiclePlaceholder silhouette={model.silhouette} rotation={rotation} color={color} />
+  // Desktop uses the exact original model.glb. VR may use an optimized copy of that same car.
+  return <AudiCarModel vehicleId={asset?.id || model.assetId} detail={session ? 'preview' : 'source'} showStatusLabel={showStatusLabel} rotation={[0, rotation, 0]} onStatus={onStatus} />
 }

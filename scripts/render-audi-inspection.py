@@ -1,7 +1,7 @@
 """Blender background render of decoded staging copies; originals remain untouched."""
-import bpy, json, math, pathlib
+import bpy, json, math, pathlib, os
 from mathutils import Vector
-staging = pathlib.Path('/private/tmp/audi-asset-staging')
+staging = pathlib.Path(os.environ.get('AUDI_ASSET_STAGING', '/private/tmp/audi-asset-staging'))
 results = []
 for folder in sorted(staging.iterdir()):
     source = folder / 'inspection.glb'

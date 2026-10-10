@@ -4,23 +4,22 @@ import type { Group } from 'three'
 import { BUDGET_STEP, MAX_BUDGET, MIN_BUDGET } from '../logic/budget'
 import { budgetFromRay } from '../logic/slider'
 import { useJourney } from '../state/JourneyContext'
+import { useDragCapture } from '../hooks/useDragCapture'
 
 export function BudgetSlider() {
   const { state, dispatch } = useJourney()
   const group = useRef<Group>(null)
-  const pointer = useRef<number | null>(null)
+  const { capture, capturePointer, releasePointer } = useDragCapture()
   const width = 3
   const update = (event: ThreeEvent<PointerEvent>) => {
     event.stopPropagation()
+    if (capture.current && capture.current.id !== event.pointerId) return
     if (!group.current) return
     const budget = budgetFromRay(event.ray, group.current.matrixWorld, width)
     if (budget !== null) dispatch({ type: 'budget', budget })
   }
   const finish = (event: ThreeEvent<PointerEvent>) => {
-    if (pointer.current !== event.pointerId) return
-    pointer.current = null
-    const target = event.target as unknown as { releasePointerCapture: (id: number) => void } | null
-    target?.releasePointerCapture(event.pointerId)
+    releasePointer(event.pointerId)
   }
   const fraction = (state.budget - MIN_BUDGET) / (MAX_BUDGET - MIN_BUDGET)
   return <group position={[0, 1.45, -3]} ref={group} name="Budget slider">
@@ -31,16 +30,13 @@ export function BudgetSlider() {
     <mesh
       pointerEventsType={{ deny: 'grab' }}
       onPointerDown={(event) => {
-        if (pointer.current !== null) return
-        pointer.current = event.pointerId
-        const target = event.target as unknown as { setPointerCapture: (id: number) => void } | null
-        target?.setPointerCapture(event.pointerId)
+        if (!capturePointer(event)) return
         update(event)
       }}
-      onPointerMove={(event) => { if (pointer.current === event.pointerId) update(event) }}
-      onPointerUp={(event) => { if (pointer.current === event.pointerId) update(event); finish(event) }}
+      onPointerMove={(event) => { if (capture.current?.id === event.pointerId) update(event) }}
+      onPointerUp={(event) => { if (capture.current?.id === event.pointerId) update(event); finish(event) }}
       onPointerCancel={finish}
-      onLostPointerCapture={() => { pointer.current = null }}
+      onLostPointerCapture={finish}
       onClick={update}
     >
       <boxGeometry args={[width + 0.18, 0.32, 0.06]} /><meshBasicMaterial transparent opacity={0} colorWrite={false} depthWrite={false} />

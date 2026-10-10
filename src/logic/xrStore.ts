@@ -10,6 +10,14 @@ export const xrStore = createXRStore({
   frameBufferScaling: 1,
   handTracking: false,
   hand: false,
+  controller: {
+    grabPointer: false,
+    teleportPointer: false,
+    rayPointer: {
+      rayModel: { color: '#ffffff', opacity: 0.65, maxLength: 12, size: 0.003 },
+      cursorModel: { color: '#ffffff', opacity: 0.95, size: 0.025 },
+    },
+  },
   meshDetection: false,
   planeDetection: false,
   hitTest: false,

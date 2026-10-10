@@ -8,6 +8,8 @@
 .experience-body { display: grid; grid-template-columns: 42% 58%; min-height: 600px; }
 .journey-panel { padding: 55px 30px 28px 12%; position: relative; z-index: 2; align-self: center; }
 .panel-content { outline: none; }
+.answer-confirmation { min-height: 18px; font-size: 11px; color: #c7d2e1; margin: 12px 0; }
+.reasons-title { font-size: 11px; letter-spacing: .1em; font-weight: 500; margin-top: 26px; }
 .eyebrow { font-size: 10px; letter-spacing: .15em; color: #e55a75; line-height: 1.7; margin: 0 0 24px; }
 .eyebrow span { color: #a8b2c2; display: block; margin-top: 8px; }
 h1 { font-weight: 400; font-size: clamp(32px, 3.4vw, 56px); line-height: 1.12; letter-spacing: -.045em; margin: 0 0 24px; }

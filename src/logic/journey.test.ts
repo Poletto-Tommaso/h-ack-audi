@@ -8,6 +8,7 @@ import { initialJourney, journeyReducer } from './journeyState'
 import { recommend } from './recommendation'
 import type { Answers } from './recommendation'
 import { getBookingUrl } from '../data/booking'
+import { getRecommendationAsset } from '../data/recommendationAssets'
 
 describe('journey state', () => {
   it('preserves budget/answers through back navigation and invalidates only on portal change', () => {
@@ -73,6 +74,19 @@ describe('deterministic prototype matching', () => {
     expect(constrained.status === 'prototype' && constrained.model.id).toBe('q4')
   })
 
+  it('fixes the reported PERFORMANCE / €65,000 path with the real RS 3 and reaches all nine imported cars', () => {
+    const result = recommend('performance', 65_000, [0, 0, 0, 0])
+    expect(result.status === 'prototype' && result.model.name).toBe('Audi RS 3 Sportback')
+    expect(result.status === 'prototype' && getRecommendationAsset(result.model.id)?.modelPath).toBe('/models/cars/audi-rs3/model.glb')
+    const reached = new Set<string>()
+    for (const portal of portals) for (let permutation = 0; permutation < 81; permutation++) {
+      const answers = [0, 1, 2, 3].map(i => Math.floor(permutation / 3 ** i) % 3) as Answers
+      const match = recommend(portal.id, 150_000, answers)
+      if (match.status === 'prototype') reached.add(match.model.assetId)
+    }
+    expect(reached).toEqual(new Set(mockModels.map(model => model.assetId)))
+  })
+
   it('never exceeds synthetic eligibility for all 8,424 budget/answer/portal combinations', () => {
     for (const portal of portals) for (let budget = 25_000; budget <= 150_000; budget += 5_000) for (let permutation = 0; permutation < 81; permutation++) {
       const answers = [0, 1, 2, 3].map((i) => Math.floor(permutation / 3 ** i) % 3) as Answers
@@ -82,6 +96,7 @@ describe('deterministic prototype matching', () => {
       if (result.status === 'prototype') {
         expect(eligible).toContainEqual(result.model)
         expect(result.reasons).toHaveLength(3)
+        expect(getRecommendationAsset(result.model.id)?.name).toBe(result.model.name)
       } else expect(eligible).toHaveLength(0)
     }
   })

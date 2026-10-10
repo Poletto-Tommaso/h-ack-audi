@@ -1,21 +1,22 @@
 import type { PortalId, Trait } from './portals'
+import { audiModels } from './audiModels'
+import type { AudiVehicleId } from './audiModels'
 
-export type MockModel = { id: string; name: string; portals: PortalId[]; demoTier: number; traits: Trait[]; silhouette: 'sport' | 'sedan' | 'suv' }
-// All tiers and traits are fictional matching metadata. No Audi price/specification is asserted.
-export const mockModels: MockModel[] = [
-  { id: 's3', name: 'Audi S3', portals: ['performance'], demoTier: 1, traits: ['power', 'handling', 'compact'], silhouette: 'sport' },
-  { id: 'rs3', name: 'Audi RS 3', portals: ['performance'], demoTier: 3, traits: ['power', 'handling', 'technology'], silhouette: 'sport' },
-  { id: 's5', name: 'Audi S5', portals: ['performance'], demoTier: 3, traits: ['power', 'comfort', 'versatility'], silhouette: 'sedan' },
-  { id: 'rs6', name: 'Audi RS 6', portals: ['performance'], demoTier: 5, traits: ['power', 'space', 'comfort'], silhouette: 'sedan' },
-  { id: 'a5', name: 'Audi A5', portals: ['comfort'], demoTier: 1, traits: ['compact', 'comfort', 'versatility'], silhouette: 'sedan' },
-  { id: 'a6', name: 'Audi A6', portals: ['comfort'], demoTier: 3, traits: ['comfort', 'technology', 'versatility'], silhouette: 'sedan' },
-  { id: 'q5', name: 'Audi Q5', portals: ['comfort'], demoTier: 3, traits: ['space', 'versatility', 'handling'], silhouette: 'suv' },
-  { id: 'q7', name: 'Audi Q7', portals: ['comfort'], demoTier: 4, traits: ['space', 'comfort', 'versatility'], silhouette: 'suv' },
-  { id: 'a8', name: 'Audi A8', portals: ['comfort'], demoTier: 5, traits: ['comfort', 'technology', 'space'], silhouette: 'sedan' },
-  { id: 'a3', name: 'Audi A3 Sportback', portals: ['everyday'], demoTier: 1, traits: ['compact', 'handling', 'efficiency'], silhouette: 'sport' },
-  { id: 'q3', name: 'Audi Q3', portals: ['everyday'], demoTier: 2, traits: ['space', 'versatility', 'comfort'], silhouette: 'suv' },
-  { id: 'q4', name: 'Audi Q4 e-tron', portals: ['everyday', 'emotion'], demoTier: 1, traits: ['compact', 'efficiency', 'versatility'], silhouette: 'suv' },
-  { id: 'q6', name: 'Audi Q6 e-tron', portals: ['emotion'], demoTier: 3, traits: ['space', 'comfort', 'technology'], silhouette: 'suv' },
-  { id: 'a6-etron', name: 'Audi A6 e-tron', portals: ['emotion'], demoTier: 3, traits: ['range', 'efficiency', 'technology'], silhouette: 'sedan' },
-  { id: 'etron-gt', name: 'Audi e-tron GT', portals: ['emotion'], demoTier: 5, traits: ['power', 'handling', 'technology'], silhouette: 'sport' },
-]
+export type MockModel = { id: string; assetId: AudiVehicleId; name: string; portals: PortalId[]; demoTier: number; traits: Trait[]; silhouette: 'sport' | 'sedan' | 'suv' }
+// Eligibility tiers and traits remain fictional demo metadata, never Audi prices/specifications.
+// Candidate identity, name and categories come from the imported GLB registry itself.
+const demoProfiles: Record<AudiVehicleId, Pick<MockModel, 'id' | 'demoTier' | 'traits' | 'silhouette'>> = {
+  'audi-a1': { id: 'a1', demoTier: 1, traits: ['compact', 'efficiency'], silhouette: 'sport' },
+  'audi-a3-sedan': { id: 'a3', demoTier: 1, traits: ['compact', 'handling', 'efficiency'], silhouette: 'sedan' },
+  'audi-rs3': { id: 'rs3', demoTier: 1, traits: ['power', 'handling', 'compact'], silhouette: 'sport' },
+  'audi-rs6': { id: 'rs6', demoTier: 5, traits: ['power', 'space', 'comfort'], silhouette: 'sedan' },
+  'audi-a5-sportback': { id: 'a5', demoTier: 1, traits: ['compact', 'comfort', 'versatility'], silhouette: 'sedan' },
+  'audi-a6-limousine': { id: 'a6', demoTier: 3, traits: ['comfort', 'technology', 'versatility'], silhouette: 'sedan' },
+  'audi-q4-etron': { id: 'q4', demoTier: 1, traits: ['compact', 'efficiency', 'versatility'], silhouette: 'suv' },
+  'audi-q5': { id: 'q5', demoTier: 3, traits: ['space', 'versatility', 'handling'], silhouette: 'suv' },
+  'audi-etron-gt': { id: 'etron-gt', demoTier: 5, traits: ['power', 'handling', 'technology'], silhouette: 'sport' },
+}
+
+export const mockModels: MockModel[] = audiModels
+  .filter(asset => asset.available && asset.modelPath)
+  .map(asset => ({ ...demoProfiles[asset.id], assetId: asset.id, name: asset.name, portals: [...asset.categories] }))

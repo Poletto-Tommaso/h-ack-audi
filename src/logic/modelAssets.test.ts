@@ -3,8 +3,9 @@ import { readFileSync, statSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { Box3, BoxGeometry, Group, Mesh, Vector3 } from 'three'
 import { audiModels } from '../data/audiModels'
-import { getRecommendationAsset } from '../data/recommendationAssets'
+import { canPresentRealModel, getRecommendationAsset, previewPaths } from '../data/recommendationAssets'
 import { getModelTransform } from './modelTransform'
+import { mockModels } from '../data/mockModels'
 
 describe('Audi asset integrity', () => {
   it('resolves nine distinct, self-contained GLBs and exact discovery category membership', () => {
@@ -33,9 +34,24 @@ describe('Audi asset integrity', () => {
       expect([...data.buffers, ...(data.images || [])].every((item) => !item.uri || item.uri.startsWith('data:'))).toBe(true)
       expect(statSync(`public${model.thumbnailPath}`).size).toBeGreaterThan(0)
     }
-    expect(getRecommendationAsset('a3')).toBeUndefined() // Sedan ≠ Sportback.
+    expect(getRecommendationAsset('a3')?.name).toBe('Audi A3 Sedan')
     expect(getRecommendationAsset('etron-gt')?.name).toBe('Audi RS e-tron GT')
     expect(getRecommendationAsset('rs6')?.name).toBe('Audi RS 6 Avant GT')
+    expect(canPresentRealModel('rs6')).toBe(true)
+    expect(getRecommendationAsset('s3')).toBeUndefined() // Never label an RS3 asset as an S3.
+    expect(new Set(mockModels.map(model => model.assetId))).toEqual(new Set(audiModels.map(asset => asset.id)))
+    for (const model of mockModels) {
+      const asset = getRecommendationAsset(model.id)!
+      expect(canPresentRealModel(model.id)).toBe(true)
+      expect(model.name).toBe(asset.name)
+      expect(model.portals).toEqual(asset.categories)
+      expect(asset.modelPath).toBe(`/models/cars/${model.assetId}/model.glb`)
+    }
+    for (const path of Object.values(previewPaths)) {
+      const bytes = readFileSync(`public${path}`)
+      expect(bytes.toString('utf8', 0, 4)).toBe('glTF')
+      expect(bytes.readUInt32LE(8)).toBe(bytes.length)
+    }
   })
 
   it('normalizes arbitrarily translated / rotated source geometry to a centered grounded preview', () => {

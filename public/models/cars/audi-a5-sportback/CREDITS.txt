@@ -5,3 +5,5 @@ License (source metadata, retained without interpretation): CC-BY-4.0 (http://cr
 
 Derived from Desktop/a5 sportback sline model/audi_a5_sportback_s_line_-_2021.glb. Meshopt compression, lossless WebP texture encoding (max 2048 px), compatible mesh joining; original source untouched.
 Thumbnail rendered in Blender from a decoded inspection copy.
+
+STEP 3 mobile inspection copy: model-mobile.glb. Derived from this same credited vehicle, not a different model. Static geometry, reduced detail, textures at most 1024 px, Meshopt compression and lossless WebP encoding. Source/model.glb remain unchanged. SHA-256: 5e04d7d9133c9cf28ac6bca32d4bc06af4206f2360372737bf0d6c626ba110b3.

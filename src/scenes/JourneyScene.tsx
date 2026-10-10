@@ -1,5 +1,7 @@
 import { useJourney } from '../state/JourneyContext'
 import { OriginEnvironment } from '../components/OriginEnvironment'
+import { PortalEnvironment } from '../components/PortalEnvironment'
+import { VehicleStage } from '../components/VehicleStage'
 import { JourneyNavigation } from '../components/JourneyNavigation'
 import { OriginScene } from './OriginScene'
 import { FindYourWorldScene } from './FindYourWorldScene'
@@ -20,7 +22,7 @@ export function JourneyScene() {
     case 'result': content = state.mode === 'explore' ? <VehicleExplorationScene /> : state.mode === 'drive' ? <DrivingPreviewScene /> : <YourAudiScene />; break
   }
   return <>
-    <OriginEnvironment awakened={state.scene !== 'origin'} />
+    {state.scene === 'origin' || state.scene === 'world' ? <OriginEnvironment awakened={state.scene === 'world'} /> : state.scene === 'result' && state.mode !== 'drive' ? <VehicleStage /> : <PortalEnvironment portal={state.portal || 'comfort'} />}
     <group key={`${state.scene}:${state.mode}:${state.restartEpoch}`} name={`Scene ${state.scene}`}>{content}</group>
     <JourneyNavigation />
   </>

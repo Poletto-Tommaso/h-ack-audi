@@ -1,17 +1,24 @@
 import { getAudiModel } from './audiModels'
 import type { AudiVehicleId } from './audiModels'
+import { mockModels } from './mockModels'
 
-// Family previews only. The actual imported variant must always be identified in UI.
-// A3 Sportback has no matching asset: the discovered A3 Sedan is deliberately not mapped.
-const familyAssets: Readonly<Record<string, AudiVehicleId>> = {
-  rs3: 'audi-rs3', rs6: 'audi-rs6', a5: 'audi-a5-sportback', a6: 'audi-a6-limousine',
-  q5: 'audi-q5', q4: 'audi-q4-etron', 'etron-gt': 'audi-etron-gt',
-}
+// Explicit, exact vehicle identities. Never use an RS model under an S model's name,
+// or a sedan under a Sportback name. Candidates are derived from the asset registry.
 export function getRecommendationAsset(modelId: string) {
-  const id = familyAssets[modelId]
-  return id ? getAudiModel(id) : undefined
+  const candidate = mockModels.find(model => model.id === modelId)
+  return getAudiModel(candidate?.assetId || modelId)
 }
 export function getAssetDescription(modelId: string) {
   const asset = getRecommendationAsset(modelId)
-  return asset?.available ? `3D asset: ${asset.name}. Source variant preview; trim may differ from the prototype suggestion.` : 'Generic vehicle placeholder. No matching 3D asset is available for this candidate.'
+  return asset?.available && asset.modelPath ? `3D asset: ${asset.name}. Original imported GLB and materials.` : 'Audi model file unavailable. No generated vehicle is substituted.'
+}
+export const previewPaths: Partial<Record<AudiVehicleId, string>> = {
+  'audi-a5-sportback': '/models/cars/audi-a5-sportback/model-mobile.glb',
+  'audi-a6-limousine': '/models/cars/audi-a6-limousine/model-mobile.glb',
+  'audi-q4-etron': '/models/cars/audi-q4-etron/model-mobile.glb',
+  'audi-q5': '/models/cars/audi-q5/model-mobile.glb',
+}
+export const canPresentRealModel = (modelId: string) => {
+  const asset = getRecommendationAsset(modelId)
+  return !!(asset?.available && asset.modelPath)
 }

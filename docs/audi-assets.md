@@ -76,3 +76,7 @@ The preparation script uses the exact discovered Desktop names and writes only t
 ## STEP 3
 
 Start with the RS3 on physical Quest 3S; exercise reveal/explore/driving, controller selection, VR exit/re-entry and scene changes while checking frame time and memory. Build mobile LODs for the heavy models (especially A1/A5 and RS6/A6), then compare visual quality and test fallback/error cases. Only after that expand the discovery recommendation catalog to these exact variants using verified market and price data.
+
+## STEP 3 follow-up
+
+The source-import evidence above describes Step 2. Step 3 adds four mobile copies and retains every original `model.glb`; see [the immersive implementation report](step3.md) and [mobile validation metrics](audi-mobile-metrics.json). After the desktop correction, the candidate catalog derives all nine exact identities and categories from the unchanged registry. Desktop reveal/explore/driving loads each original GLB, including RS6. RS e-tron GT is named as RS e-tron GT; A3 Sedan is named as Sedan. Generated car placeholders are removed even for loading/errors. Recommendation scoring and approved questions remain unchanged; only the asset-backed candidate dataset and rendering integration change. Heavy original models still need Quest profiling.

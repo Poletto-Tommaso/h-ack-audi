@@ -9,9 +9,10 @@ export function JourneyNavigation() {
   const session = useXR((xr) => xr.session)
   const [error, setError] = useState(false)
   return <group>
-    {state.scene !== 'origin' && <WorldButton label="BACK" position={[-0.9, 0.17, -2]} width={0.7} height={0.3} onClick={() => dispatch({ type: 'back' })} />}
-    <WorldButton label="RESTART" position={[0, 0.17, -2]} width={0.9} height={0.3} onClick={() => dispatch({ type: 'restart' })} />
-    {session && <WorldButton label="EXIT VR" position={[0.9, 0.17, -2]} width={0.7} height={0.3} onClick={() => { void session.end().catch(() => setError(true)) }} />}
-    {error && <SceneLabel text="Use the headset system menu to exit VR." position={[0, 0.48, -2.8]} width={3} fontSize={0.08} color="#ff8ba3" />}
+    {/* A separate near, low navigation rail avoids overlapping the answer/continue rays. */}
+    {state.scene !== 'origin' && <WorldButton label={state.scene === 'result' && state.mode !== 'reveal' ? 'BACK TO YOUR AUDI' : 'BACK'} position={[-1.15, 0.25, -2.3]} width={1.8} height={0.38} onClick={() => dispatch({ type: 'back' })} />}
+    <WorldButton label="RESTART" position={[0.55, 0.25, -2.3]} width={1.1} height={0.38} onClick={() => dispatch({ type: 'restart' })} />
+    {session && <WorldButton label="EXIT VR" position={[1.85, 0.25, -2.3]} width={1.1} height={0.38} onClick={() => { void session.end().catch(() => setError(true)) }} />}
+    {error && <SceneLabel text="Use the headset system menu to exit VR." position={[0, 0.7, -2.3]} width={3} fontSize={0.08} color="#ff8ba3" />}
   </group>
 }

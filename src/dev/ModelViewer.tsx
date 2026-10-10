@@ -7,6 +7,8 @@ import { audiModels } from '../data/audiModels'
 import { getPortal } from '../data/portals'
 import { AudiCarModel } from '../components/AudiCarModel'
 import type { ModelStatus } from '../components/AudiCarModel'
+import { CarKeyLighting } from '../components/CarKeyLighting'
+import { carRendererSettings } from '../logic/carLighting'
 import './model-viewer.css'
 
 class ViewerBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
@@ -43,10 +45,11 @@ export default function ModelViewer() {
         <p role="status">Model status: {status}</p>
       </header>
       <div className="model-canvas"><ViewerBoundary><Suspense fallback={<p>Preparing viewer…</p>}>
-        <Canvas camera={{ position: [3.2, 2, 3.8], fov: 42, near: 0.01, far: 60 }} dpr={[1, 1.5]} gl={{ antialias: true }} fallback={<p role="alert">WebGL is unavailable.</p>}>
+        <Canvas camera={{ position: [3.2, 2, 3.8], fov: 42, near: 0.01, far: 60 }} dpr={[1, 1.5]} shadows="percentage" gl={{ antialias: true, ...carRendererSettings }} fallback={<p role="alert">WebGL is unavailable.</p>}>
           <color attach="background" args={['#151b25']} />
           <AudiCarModel key={`${selectedId}:${epoch}`} vehicleId={selectedId} onStatus={setStatus} />
-          <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.005, 0]}><circleGeometry args={[6, 48]} /><meshStandardMaterial color="#242b36" roughness={0.8} /></mesh>
+          <CarKeyLighting target={[0, 0.5, 0]} shadows />
+          <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.005, 0]} receiveShadow><circleGeometry args={[6, 48]} /><meshStandardMaterial color="#242b36" roughness={0.8} /></mesh>
           <OrbitControls ref={controls} makeDefault target={[0, 0.5, 0]} minDistance={1} maxDistance={12} maxPolarAngle={Math.PI / 2 - 0.01} enableDamping />
         </Canvas>
       </Suspense></ViewerBoundary></div>

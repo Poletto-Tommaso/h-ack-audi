@@ -5,3 +5,5 @@ License (source metadata, retained without interpretation): CC-BY-NC-SA-4.0 (htt
 
 Derived from Desktop/q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi.glb. Meshopt compression, lossless WebP texture encoding (max 2048 px), compatible mesh joining; original source untouched.
 Thumbnail rendered in Blender from a decoded inspection copy.
+
+STEP 3 mobile inspection copy: model-mobile.glb. Derived from this same credited vehicle, not a different model. Static geometry, reduced detail, textures at most 1024 px, Meshopt compression and lossless WebP encoding. Source/model.glb remain unchanged. SHA-256: 1e322127fc61f9a85dc5dc0f0a6c949851a25acb628cfca43b303fa82218c6fa.

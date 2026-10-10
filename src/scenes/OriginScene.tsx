@@ -25,6 +25,7 @@ export function OriginScene() {
       </mesh>
     </group>
     <SceneLabel text="A journey beyond specifications." position={[0, 1.02, -3.5]} width={3.2} color="#b5c0d1" />
+    <SceneLabel text="Point at a control. Press the trigger to select." position={[0, 0.37, -3.5]} width={3.6} fontSize={0.1} color="#aab7c9" />
     <WorldButton label="START YOUR JOURNEY" position={[0, 0.65, -3]} onClick={() => dispatch({ type: 'start' })} />
   </>
 }

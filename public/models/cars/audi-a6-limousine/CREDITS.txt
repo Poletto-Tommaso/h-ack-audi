@@ -5,3 +5,5 @@ License (source metadata, retained without interpretation): SKETCHFAB Standard (
 
 Derived from Desktop/a6 limuousine/audi_a6_c8_limousine.glb. Meshopt compression, lossless WebP texture encoding (max 2048 px), compatible mesh joining; original source untouched.
 Thumbnail rendered in Blender from a decoded inspection copy.
+
+STEP 3 mobile inspection copy: model-mobile.glb. Derived from this same credited vehicle, not a different model. Static geometry, reduced detail, textures at most 1024 px, Meshopt compression and lossless WebP encoding. Source/model.glb remain unchanged. SHA-256: cef481912ffd1b47fe9a1251615b7f0b02e9aa8409e6254bf25e75d6468b5249.

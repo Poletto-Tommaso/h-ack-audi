@@ -8,10 +8,12 @@ import { BUDGET_STEP, MIN_BUDGET, MAX_BUDGET, formatBudget } from '../logic/budg
 import { recommend } from '../logic/recommendation'
 import { useOriginPhase } from '../hooks/useOriginPhase'
 import { useBooking } from '../hooks/useBooking'
-import { getAssetDescription, getRecommendationAsset } from '../data/recommendationAssets'
+import { getAssetDescription } from '../data/recommendationAssets'
+import { useReducedMotion } from '../hooks/useReducedMotion'
 
 export function JourneyPanel() {
-  const { state, dispatch } = useJourney()
+  const { state, dispatch, answerPending } = useJourney()
+  const reduced = useReducedMotion()
   const phase = useOriginPhase(state.scene === 'origin', state.restartEpoch)
   const booking = useBooking()
   const heading = useRef<HTMLDivElement>(null)
@@ -51,6 +53,7 @@ export function JourneyPanel() {
         <h1 className="question-title">{question.text}</h1>
         <div className="question-progress" aria-label={`Question ${state.questionIndex + 1} of 4`}>{[0, 1, 2, 3].map((index) => <i key={index} className={index <= state.questionIndex ? 'filled' : ''} />)}</div>
         <div className="answer-options" role="group" aria-label="Choose one answer">{question.answers.map((answer, index) => <button className="answer-option" key={answer} aria-pressed={state.answers[state.questionIndex] === index} onClick={() => dispatch({ type: 'answer', answer: index as AnswerIndex })}><span>{String.fromCharCode(65 + index)}</span>{' '}{answer}</button>)}</div>
+        <p className="answer-confirmation" role="status">{answerPending ? 'Answer saved. Continuing…' : 'Choose an answer to continue automatically.'}</p>
         <button className="primary-button" disabled={state.answers[state.questionIndex] === null} onClick={next}>{state.questionIndex === 3 ? 'FIND MY AUDI' : 'NEXT QUESTION'} <span aria-hidden="true">↗</span></button>
       </>
       break
@@ -63,13 +66,13 @@ export function JourneyPanel() {
       if (state.mode === 'explore') {
         content = <><p className="eyebrow">05 / EXPLORE YOUR AUDI</p><h1>{result.model.name}</h1><p className="lead">Look around your possibility.</p><p className="intro-copy">{getAssetDescription(result.model.id)} Rotate using the controls below.</p>
           <div className="button-row"><button className="secondary-button" onClick={() => dispatch({ type: 'rotate', delta: -Math.PI / 6 })}>ROTATE LEFT</button><button className="secondary-button" onClick={() => dispatch({ type: 'rotate', delta: Math.PI / 6 })}>ROTATE RIGHT</button></div>
-          {!getRecommendationAsset(result.model.id) && <div className="button-row"><button className="secondary-button" aria-pressed={state.vehicleColor === '#d8dde6'} onClick={() => dispatch({ type: 'paint', color: '#d8dde6' })}>SILVER</button><button className="secondary-button" aria-pressed={state.vehicleColor !== '#d8dde6'} onClick={() => dispatch({ type: 'paint', color: getPortal(state.portal!).color })}>ROUTE COLOR</button></div>}
         </>
         break
       }
       if (state.mode === 'drive') {
-        content = <><p className="eyebrow">05 / EXPERIENCE YOUR DRIVE</p><h1>A glimpse of<br /><em>the road ahead.</em></h1><p className="lead">{result.model.name} · miniature preview</p><p className="intro-copy">Play or pause the road markers and switch lanes. The camera stays still. This simulation does not represent vehicle performance.</p>
-          <button className="primary-button" onClick={() => dispatch({ type: 'preview-toggle' })}>{state.playing ? 'PAUSE PREVIEW' : 'PLAY PREVIEW'}</button>
+        content = <><p className="eyebrow">05 / EXPERIENCE YOUR DRIVE</p><h1>A glimpse of<br /><em>the road ahead.</em></h1><p className="lead">{result.model.name} · stationary atmosphere preview</p><p className="intro-copy">Inspect the vehicle in your chosen environment. Optional movement affects distant road markings; your viewpoint stays still. Left/right repositions the display vehicle. No driving physics or performance is simulated.</p>
+          <button className="primary-button" disabled={reduced} onClick={() => dispatch({ type: 'preview-toggle' })}>{state.playing ? 'PAUSE PREVIEW' : 'PLAY PREVIEW'}</button>
+          {reduced && <p className="fine-print">Reduced motion is enabled; the environment remains still.</p>}
           <div className="button-row"><button className="secondary-button" disabled={state.lane <= -1} onClick={() => dispatch({ type: 'lane', delta: -1 })}>LEFT</button><button className="secondary-button" disabled={state.lane >= 1} onClick={() => dispatch({ type: 'lane', delta: 1 })}>RIGHT</button></div>
         </>
         break
@@ -78,7 +81,7 @@ export function JourneyPanel() {
         <p className="eyebrow">05 / WE FOUND YOUR DRIVE.</p><h1>YOUR AUDI<br /><em>{result.model.name}</em></h1>
         <p className="selection-summary">{getPortal(state.portal!).title} · {formatBudget(state.budget)}</p>
         <p className="fine-print">{getAssetDescription(result.model.id)}</p>
-        <ol className="match-reasons">{result.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ol>
+        <h2 className="reasons-title">WHY THIS AUDI?</h2><ol className="match-reasons">{result.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ol>
         <p className="mock-notice"><strong>PROTOTYPE SUGGESTION</strong> Synthetic budget tier {result.demoTier}/5 and fictional matching traits. No official model price, specification, availability, or affordability is confirmed.</p>
         <div className="result-actions"><button className="primary-button" onClick={() => dispatch({ type: 'mode', mode: 'explore' })}>EXPLORE YOUR AUDI <span aria-hidden="true">↗</span></button><button className="secondary-button" onClick={() => dispatch({ type: 'mode', mode: 'drive' })}>EXPERIENCE YOUR DRIVE</button><button className="secondary-button" onClick={booking.open}>BOOK A TEST DRIVE</button></div>
         <p className="fine-print" role="status">{booking.message || (!booking.url ? 'Booking placeholder — no verified official URL supplied.' : 'Opens the configured official Audi page. No booking is made here.')}</p>
@@ -87,6 +90,6 @@ export function JourneyPanel() {
     }
   }
   return <section className="journey-panel desktop-ui" aria-label="Journey controls"><div tabIndex={-1} ref={heading} className="panel-content">{content}</div>
-    <nav className="panel-navigation" aria-label="Journey navigation">{state.scene !== 'origin' && <button className="text-button" onClick={() => dispatch({ type: 'back' })}>← BACK</button>}<button className="text-button" onClick={() => dispatch({ type: 'restart' })}>RESTART</button></nav>
+    <nav className="panel-navigation" aria-label="Journey navigation">{state.scene !== 'origin' && <button className="text-button" onClick={() => dispatch({ type: 'back' })}>{state.scene === 'result' && state.mode !== 'reveal' ? '← BACK TO YOUR AUDI' : '← BACK'}</button>}<button className="text-button" onClick={() => dispatch({ type: 'restart' })}>RESTART</button></nav>
   </section>
 }

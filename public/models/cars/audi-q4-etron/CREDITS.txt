@@ -5,3 +5,5 @@ License (source metadata, retained without interpretation): CC-BY-4.0 (http://cr
 
 Derived from Desktop/q4 models/2022_audi_q4.glb. Meshopt compression, lossless WebP texture encoding (max 2048 px), compatible mesh joining; original source untouched.
 Thumbnail rendered in Blender from a decoded inspection copy.
+
+STEP 3 mobile inspection copy: model-mobile.glb. Derived from this same credited vehicle, not a different model. Static geometry, reduced detail, textures at most 1024 px, Meshopt compression and lossless WebP encoding. Source/model.glb remain unchanged. SHA-256: 051218e03fb66a38b08531a84b9aecc2b2f04709606a1b971922917af20fe0a9.
