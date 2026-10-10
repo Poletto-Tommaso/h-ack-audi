@@ -1,0 +1,7 @@
+2024 Audi RS6 Avant GT
+Author: Ddiaz Design (https://sketchfab.com/ddiaz-design)
+Source: https://sketchfab.com/3d-models/2024-audi-rs6-avant-gt-e74dce0d5b294381a979627513ca9f30
+License (source metadata, retained without interpretation): CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+Derived from Desktop/rs6 model/2024_audi_rs6_avant_gt.glb. Meshopt compression, lossless WebP texture encoding (max 2048 px), compatible mesh joining; original source untouched.
+Thumbnail rendered in Blender from a decoded inspection copy.

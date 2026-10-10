@@ -119,13 +119,14 @@ On desktop, a valid configured action opens the official page in a separate tab.
 
 ```text
 src/
-  components/   Canvas, reusable 3D/HTML controls, portal vignettes, vehicle blockout
+  components/   Canvas, reusable controls, AudiCarModel, studio lighting, fallback blockout
   scenes/       Origin, portals, budget, questionnaire, result, exploration, driving preview
   state/        JourneyContext.tsx — one shared provider above desktop UI and Canvas
-  data/         portals.ts, questions.ts, mockModels.ts, booking.ts, chapters.ts
-  logic/        journeyState.ts, budget.ts, recommendation.ts, xrStore.ts
-  hooks/        VR availability/session, pointer feedback, booking, intro timing
-  assets/       Space for future optimized local assets
+  data/         portals, questions, mock candidates, audiModels registry, asset associations
+  logic/        Journey, budget, recommendation, XR store, model normalization
+  hooks/        VR/session, pointer feedback, booking, model resource lifetime
+  dev/          Development-only model viewer (separate from XR)
+  assets/       Source-code assets; vehicle GLBs live in public/models/cars/
   App.tsx       Experience shell, XR entry and journey progress
   main.tsx      React entry point
 ```
@@ -136,11 +137,32 @@ The existing `createXRStore`, `<XR store={xrStore}>`, `store.enterVR()`, and sta
 
 ## Performance and verification
 
-- Procedural low-poly geometry, no heavy assets, shadows, postprocessing, particles, or network fonts. Text uses local canvas textures that are disposed when replaced/unmounted.
+- Procedural low-poly environments, imported vehicle GLBs loaded on demand, no shadows, postprocessing, particles, or network fonts. Text uses local canvas textures that are disposed when replaced/unmounted. Several vehicle assets still need mobile LODs; see the asset report below.
 - Desktop DPR is capped at 1.5; its camera adjusts for narrow viewports. XR uses framebuffer scale 1 and maximum fixed foveation where supported. The store requests the lowest advertised device frame rate, usually targeting Quest's 72 Hz mode. Sustained frame time must be measured on hardware.
 - Hand tracking and AR/environment features remain disabled for this controller-first prototype. Controller models/profiles still load from the library's jsDelivr CDN on first use, so internet is needed initially. Self-host these assets before an offline event.
 - The 3D scene module loads separately, but Vite still warns about large Three.js/XR vendor chunks. The XR dependency emits optional emulator/room chunks; built-in emulation is disabled and those chunks are not requested in this runtime.
-- **22 automated tests pass**: six existing VR-support/session checks, five complete-journey/no-match UI checks, eight state/matching/booking checks, and three mouse/controller ray-projection checks. The engine test covers all **8,424 portal × budget × answer combinations**. These run with simulated WebXR and DOM APIs, not physical controllers or GPU rendering.
+- **24 automated tests pass**: six VR-support/session checks, five complete-journey/no-match UI checks, eight state/matching/booking checks, three ray-projection checks, and two asset integrity/normalization checks. The engine test covers all **8,424 portal × budget × answer combinations**. These run with simulated WebXR and DOM APIs, not physical controllers or GPU rendering.
 - `npm install`, strict TypeScript checks, tests, the production build, and an HTTP smoke check of the built page/entry assets were run successfully. Browser visual QA remains blocked because Chrome computer-use access was not approved. No physical Quest is available here; stereo output, actual controller selection/dragging, readability, re-entry, and frame rate still require the manual checks above.
 
-Recommended next step: run the entire journey on Quest 3S, tune text/target placement and profile frame time, then integrate verified market data and optimized licensed vehicle assets.
+## Imported Audi models
+
+Nine real Desktop models are now imported under `public/models/cars/`, with one physical GLB per vehicle, Blender-rendered thumbnails and source credits. Their registry is `src/data/audiModels.ts`. Prices remain null; asset availability does not imply current market availability. Source variants are retained, including RS 3 Sportback, RS 6 Avant GT and RS e-tron GT. The A3 Sedan is never used as an A3 Sportback substitute. Seven existing mock candidate families show the corresponding source variant in reveal/exploration/miniature preview; other candidates retain the labeled procedural fallback. Source materials are preserved, so paint controls are offered only on placeholders.
+
+```sh
+npm install
+npm run dev
+# Open http://localhost:5173/dev/models for the development asset viewer.
+npm run typecheck
+npm test
+npm run build
+```
+
+Select each vehicle in `/dev/models`; wait for `ready`, drag to orbit, scroll/pinch to zoom, right-drag to pan, and use **RESET CAMERA**. A failed model shows an explicit placeholder and retry action. The viewer is development-only, uses no XR session, and is omitted from production JS. Test loading failure in browser DevTools by blocking a model request and reloading. In the normal journey, use the existing desktop buttons or VR controller controls to rotate the selected source model.
+
+For Quest 3S, use the HTTPS workflow above (`npm run dev:quest`), open the root journey on the headset, and test the controller-driven reveal/explore/preview after a matching recommendation. Use RS3 first for profiling; the asset viewer itself has desktop OrbitControls and does not enter VR. Verify stereo appearance, source orientation/materials, frame time, back/restart and repeated VR entry on physical hardware. Heavy A1/A5 geometry and RS6/A6 draw/skin counts are not yet certified for headset frame rate.
+
+The GLBs total **66.36 MiB**, down from 201.52 MiB, using Meshopt and lossless WebP with unchanged rendered triangle counts. [Drei's documented useGLTF API](https://drei.docs.pmnd.rs/loaders/gltf-use-gltf) is used with bundled Meshopt decoding. Runtime dependencies were unchanged; optional offline tooling stayed outside the repository. All files passed glTF validation and Three.js loading/image-decode checks. All nine were visually rendered in **Blender**; browser visual QA and physical Quest rendering remain unverified.
+
+Read the [asset import report](docs/audi-assets.md) for the per-vehicle formats, destination paths, categories, exact sizes, missing alternative Q4 OBJ textures, retained source licenses and Quest optimization priorities. The report links the full source inventory, validation results and [rendered contact sheet](docs/audi-model-contact-sheet.png).
+
+Recommended STEP 3: profile RS3 on physical Quest, create mobile LOD/material variants for the heavy cars, then expand matching to exact variants using verified market/pricing data.

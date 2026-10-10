@@ -1,0 +1,7 @@
+Audi RS e-tron GT
+Author: dannzjs (https://sketchfab.com/dannzjs)
+Source: https://sketchfab.com/3d-models/audi-rs-e-tron-gt-ae717c5decea453fa3e1c9a4b274386c
+License (source metadata, retained without interpretation): CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+Derived from Desktop/e tron gt audi models/audi_rs_e-tron_gt.glb. Meshopt compression, lossless WebP texture encoding (max 2048 px), compatible mesh joining; original source untouched.
+Thumbnail rendered in Blender from a decoded inspection copy.

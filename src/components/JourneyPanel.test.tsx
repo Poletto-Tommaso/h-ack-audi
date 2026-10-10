@@ -32,8 +32,14 @@ describe('complete desktop journeys through shared application state', () => {
     expect(screen.getByText(new RegExp(`${portal.title} · €75,000`))).toBeDefined()
     fireEvent.click(screen.getByRole('button', { name: /EXPLORE YOUR AUDI/ }))
     fireEvent.click(screen.getByRole('button', { name: 'ROTATE LEFT' }))
-    fireEvent.click(screen.getByRole('button', { name: 'ROUTE COLOR' }))
-    expect(screen.getByRole('button', { name: 'ROUTE COLOR' }).getAttribute('aria-pressed')).toBe('true')
+    if (portal.id === 'comfort' || portal.id === 'emotion') {
+      expect(screen.getByText(/3D asset:/)).toBeDefined()
+      // Source materials are preserved: paint controls apply only to procedural placeholders.
+      expect(screen.queryByRole('button', { name: 'ROUTE COLOR' })).toBeNull()
+    } else {
+      fireEvent.click(screen.getByRole('button', { name: 'ROUTE COLOR' }))
+      expect(screen.getByRole('button', { name: 'ROUTE COLOR' }).getAttribute('aria-pressed')).toBe('true')
+    }
     fireEvent.click(screen.getByRole('button', { name: /BACK/ }))
     fireEvent.click(screen.getByRole('button', { name: 'EXPERIENCE YOUR DRIVE' }))
     fireEvent.click(screen.getByRole('button', { name: 'PLAY PREVIEW' }))

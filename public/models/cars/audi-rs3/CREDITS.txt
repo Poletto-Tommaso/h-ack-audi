@@ -1,0 +1,7 @@
+2021 Audi RS3 Sportback
+Author: OUTPISTON (https://sketchfab.com/outpiston)
+Source: https://sketchfab.com/3d-models/2021-audi-rs3-sportback-96fdd80794004df28342b8e035348801
+License (source metadata, retained without interpretation): CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+Derived from Desktop/rs3 models/2021_audi_rs3_sportback.glb. Meshopt compression, lossless WebP texture encoding (max 2048 px), compatible mesh joining; original source untouched.
+Thumbnail rendered in Blender from a decoded inspection copy.

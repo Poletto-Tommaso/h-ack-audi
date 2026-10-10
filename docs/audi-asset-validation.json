@@ -1,0 +1,279 @@
+{
+  "gpuRendered": false,
+  "sourceCandidates": [
+    {
+      "source": "a1 gialla model/audi_a1_quattro_a1ii.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "source": "a3 sedan models/audi-a3-2021-trim/source/Audi A3.glb",
+      "errors": 0,
+      "warnings": 16
+    },
+    {
+      "source": "a3 sedan models/audi_a3_2021_trim.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "source": "a5 sportback sline model/audi-a5-sportback-s-line-2021/source/Audi A5 Sportback S-Line - 2021 .glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "source": "a5 sportback sline model/audi_a5_sportback_s_line_-_2021.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "source": "a6 limuousine/audi_a6_c8_limousine.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "source": "e tron gt audi models/audi-rs-e-tron-gt/source/audi_rs_e-tron_gt.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "source": "e tron gt audi models/audi_rs_e-tron_gt.glb",
+      "errors": 0,
+      "warnings": 1
+    },
+    {
+      "source": "q4 models/2022_audi_q4.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "source": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "source": "rs3 models/2021-audi-rs3-sportback/source/2021 Audi RS3 Sportback.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "source": "rs3 models/2021_audi_rs3_sportback.glb",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "source": "rs6 model/2024_audi_rs6_avant_gt.glb",
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "models": [
+    {
+      "id": "audi-a1",
+      "threeJsLoaded": true,
+      "texturesDecoded": true,
+      "bounds": [
+        -0.00041372140696438464,
+        0.0026490850532887578,
+        -180.19444274902344,
+        86.65151807809627,
+        62.66013835866188,
+        9.442127293368685e-07
+      ],
+      "sourceBounds": [
+        4.197997895971639e-06,
+        4.588567215728874e-06,
+        -180.19444274902344,
+        86.6511001586914,
+        62.66041564941409,
+        9.442127321748069e-07
+      ],
+      "validationErrors": 0,
+      "validationWarnings": 0
+    },
+    {
+      "id": "audi-a3-sedan",
+      "threeJsLoaded": true,
+      "texturesDecoded": true,
+      "bounds": [
+        -0.994140601799901,
+        -0.007492807743965879,
+        -2.247851573046788,
+        0.994140601799901,
+        1.425854654240247,
+        2.2461088508905367
+      ],
+      "sourceBounds": [
+        -0.9941167831420898,
+        -0.007447194666983403,
+        -2.2478512532210972,
+        0.9941167831420898,
+        1.4259523770084752,
+        2.2461091225662493
+      ],
+      "validationErrors": 0,
+      "validationWarnings": 0
+    },
+    {
+      "id": "audi-rs3",
+      "threeJsLoaded": true,
+      "texturesDecoded": true,
+      "bounds": [
+        -1.007173942876378,
+        3.5980014851222375e-05,
+        -2.2143998609953823,
+        1.006673979116002,
+        1.4577832741325554,
+        2.213300025895373
+      ],
+      "sourceBounds": [
+        -1.007099986076355,
+        1.3401107808785895e-05,
+        -2.21439998093629,
+        1.006600022315979,
+        1.4577002232301584,
+        2.213300025896
+      ],
+      "validationErrors": 0,
+      "validationWarnings": 0
+    },
+    {
+      "id": "audi-a5-sportback",
+      "threeJsLoaded": true,
+      "texturesDecoded": true,
+      "bounds": [
+        -8.516891347731814e-08,
+        -5.4582970145045095e-05,
+        -5.379678221541374,
+        2.3481882085701473,
+        1.6039350087178375,
+        -6.913269463559857e-07
+      ],
+      "sourceBounds": [
+        -8.516891369936275e-08,
+        -6.244254180387543e-08,
+        -5.379678177342296,
+        2.3481882085701473,
+        1.604046133524185,
+        -6.913269468000749e-07
+      ],
+      "validationErrors": 0,
+      "validationWarnings": 0
+    },
+    {
+      "id": "audi-a6-limousine",
+      "threeJsLoaded": true,
+      "texturesDecoded": true,
+      "bounds": [
+        -1.0480489402888449,
+        -0.28506790849679414,
+        -2.534679302020316,
+        1.0471875210991748,
+        1.1872651813060318,
+        2.3728315528630644
+      ],
+      "sourceBounds": [
+        -1.0480445389141613,
+        -0.2851658660059222,
+        -2.5346793645669026,
+        1.047187006908945,
+        1.1872563604027464,
+        2.3728314998258884
+      ],
+      "validationErrors": 0,
+      "validationWarnings": 0
+    },
+    {
+      "id": "audi-q4-etron",
+      "threeJsLoaded": true,
+      "texturesDecoded": true,
+      "bounds": [
+        -4.644535064697266,
+        9.621861278080734e-05,
+        -2.1345891564419004,
+        4.440892098500626e-16,
+        1.6492383363766838,
+        0.018189233102413604
+      ],
+      "sourceBounds": [
+        -4.644535064697266,
+        5.5439209679022865e-17,
+        -2.1345999240875244,
+        2.334101724206283e-16,
+        1.6492090225219729,
+        0.018200000748038167
+      ],
+      "validationErrors": 0,
+      "validationWarnings": 0
+    },
+    {
+      "id": "audi-q5",
+      "threeJsLoaded": true,
+      "texturesDecoded": true,
+      "bounds": [
+        -0.010738209059683427,
+        0.0002830508683110268,
+        -0.023370110466254257,
+        0.01094056920835857,
+        0.016627431014767387,
+        0.023397190047863337
+      ],
+      "sourceBounds": [
+        -0.010737179277751306,
+        0.00028250008190050524,
+        -0.023370110466254257,
+        0.01093953942642645,
+        0.016627589092532036,
+        0.023397190047863337
+      ],
+      "validationErrors": 0,
+      "validationWarnings": 0
+    },
+    {
+      "id": "audi-rs6",
+      "threeJsLoaded": true,
+      "texturesDecoded": true,
+      "bounds": [
+        -0.01056603905611697,
+        -3.565096831750582e-05,
+        -0.025074040329291503,
+        0.01056603905611697,
+        0.015006621836188706,
+        0.02506037894501434
+      ],
+      "sourceBounds": [
+        -0.010566199781756103,
+        -3.568929648246639e-05,
+        -0.025074040329291503,
+        0.010566199781756103,
+        0.015007371865048136,
+        0.02506037894501434
+      ],
+      "validationErrors": 0,
+      "validationWarnings": 0
+    },
+    {
+      "id": "audi-etron-gt",
+      "threeJsLoaded": true,
+      "texturesDecoded": true,
+      "bounds": [
+        9.949428067607672,
+        -0.00022901991069157468,
+        2.930799961090088,
+        18.145552172260494,
+        5.286757938221613,
+        21.855100631713867
+      ],
+      "sourceBounds": [
+        9.949480056762695,
+        1.1920899427360082e-07,
+        2.930799961090088,
+        18.14550018310547,
+        5.286870002746579,
+        21.855100631713867
+      ],
+      "validationErrors": 0,
+      "validationWarnings": 1
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Audi A5 Sportback S Line - 2021
+Author: Unn Interativa (https://sketchfab.com/unninterativa)
+Source: https://sketchfab.com/3d-models/audi-a5-sportback-s-line-2021-aa9b8d495d324fa1adfe6eab519e21a9
+License (source metadata, retained without interpretation): CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+Derived from Desktop/a5 sportback sline model/audi_a5_sportback_s_line_-_2021.glb. Meshopt compression, lossless WebP texture encoding (max 2048 px), compatible mesh joining; original source untouched.
+Thumbnail rendered in Blender from a decoded inspection copy.

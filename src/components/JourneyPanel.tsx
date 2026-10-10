@@ -8,6 +8,7 @@ import { BUDGET_STEP, MIN_BUDGET, MAX_BUDGET, formatBudget } from '../logic/budg
 import { recommend } from '../logic/recommendation'
 import { useOriginPhase } from '../hooks/useOriginPhase'
 import { useBooking } from '../hooks/useBooking'
+import { getAssetDescription, getRecommendationAsset } from '../data/recommendationAssets'
 
 export function JourneyPanel() {
   const { state, dispatch } = useJourney()
@@ -60,9 +61,9 @@ export function JourneyPanel() {
         break
       }
       if (state.mode === 'explore') {
-        content = <><p className="eyebrow">05 / EXPLORE YOUR AUDI</p><h1>{result.model.name}</h1><p className="lead">Look around your possibility.</p><p className="intro-copy">Rotate the generic blockout and try a color. This is illustrative geometry, not the selected model's actual design.</p>
+        content = <><p className="eyebrow">05 / EXPLORE YOUR AUDI</p><h1>{result.model.name}</h1><p className="lead">Look around your possibility.</p><p className="intro-copy">{getAssetDescription(result.model.id)} Rotate using the controls below.</p>
           <div className="button-row"><button className="secondary-button" onClick={() => dispatch({ type: 'rotate', delta: -Math.PI / 6 })}>ROTATE LEFT</button><button className="secondary-button" onClick={() => dispatch({ type: 'rotate', delta: Math.PI / 6 })}>ROTATE RIGHT</button></div>
-          <div className="button-row"><button className="secondary-button" aria-pressed={state.vehicleColor === '#d8dde6'} onClick={() => dispatch({ type: 'paint', color: '#d8dde6' })}>SILVER</button><button className="secondary-button" aria-pressed={state.vehicleColor !== '#d8dde6'} onClick={() => dispatch({ type: 'paint', color: getPortal(state.portal!).color })}>ROUTE COLOR</button></div>
+          {!getRecommendationAsset(result.model.id) && <div className="button-row"><button className="secondary-button" aria-pressed={state.vehicleColor === '#d8dde6'} onClick={() => dispatch({ type: 'paint', color: '#d8dde6' })}>SILVER</button><button className="secondary-button" aria-pressed={state.vehicleColor !== '#d8dde6'} onClick={() => dispatch({ type: 'paint', color: getPortal(state.portal!).color })}>ROUTE COLOR</button></div>}
         </>
         break
       }
@@ -76,6 +77,7 @@ export function JourneyPanel() {
       content = <>
         <p className="eyebrow">05 / WE FOUND YOUR DRIVE.</p><h1>YOUR AUDI<br /><em>{result.model.name}</em></h1>
         <p className="selection-summary">{getPortal(state.portal!).title} · {formatBudget(state.budget)}</p>
+        <p className="fine-print">{getAssetDescription(result.model.id)}</p>
         <ol className="match-reasons">{result.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ol>
         <p className="mock-notice"><strong>PROTOTYPE SUGGESTION</strong> Synthetic budget tier {result.demoTier}/5 and fictional matching traits. No official model price, specification, availability, or affordability is confirmed.</p>
         <div className="result-actions"><button className="primary-button" onClick={() => dispatch({ type: 'mode', mode: 'explore' })}>EXPLORE YOUR AUDI <span aria-hidden="true">↗</span></button><button className="secondary-button" onClick={() => dispatch({ type: 'mode', mode: 'drive' })}>EXPERIENCE YOUR DRIVE</button><button className="secondary-button" onClick={booking.open}>BOOK A TEST DRIVE</button></div>

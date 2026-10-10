@@ -1,0 +1,7 @@
+Audi A6 C8 Limousine
+Author: KOElkast1007 (https://sketchfab.com/koelkastasbers)
+Source: https://sketchfab.com/3d-models/audi-a6-c8-limousine-c9b7cf9c176b458785edd0b12e235364
+License (source metadata, retained without interpretation): SKETCHFAB Standard (https://sketchfab.com/licenses)
+
+Derived from Desktop/a6 limuousine/audi_a6_c8_limousine.glb. Meshopt compression, lossless WebP texture encoding (max 2048 px), compatible mesh joining; original source untouched.
+Thumbnail rendered in Blender from a decoded inspection copy.

@@ -4,6 +4,7 @@ import type { Group } from 'three'
 import { WorldButton } from '../components/WorldButton'
 import { SceneLabel } from '../components/SceneLabel'
 import { VehiclePlaceholder } from '../components/VehiclePlaceholder'
+import { RecommendedCar } from '../components/RecommendedCar'
 import { useJourney } from '../state/JourneyContext'
 import { getPortal } from '../data/portals'
 import { recommend } from '../logic/recommendation'
@@ -27,7 +28,7 @@ export function DrivingPreviewScene() {
       <group ref={markers}>
         {Array.from({ length: 7 }, (_, index) => [-0.7, 0.7].map((x) => <mesh key={`${index}:${x}`} position={[x, 0.01, -7 + index * 2]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[0.045, 0.7]} /><meshBasicMaterial color="#c6cfdd" /></mesh>))}
       </group>
-      <group position={[state.lane * 0.7, 0.03, 1]} scale={0.7}><VehiclePlaceholder silhouette={result.status === 'prototype' ? result.model.silhouette : 'sedan'} color={color} rotation={Math.PI} /></group>
+      <group position={[state.lane * 0.7, 0.03, 1]} scale={0.7}>{result.status === 'prototype' ? <RecommendedCar model={result.model} color={color} rotation={Math.PI} /> : <VehiclePlaceholder color={color} rotation={Math.PI} />}</group>
     </group>
     <WorldButton label={state.playing ? 'PAUSE PREVIEW' : 'PLAY PREVIEW'} position={[0, 1.1, -2.8]} width={2.4} onClick={() => dispatch({ type: 'preview-toggle' })} />
     <WorldButton label="LEFT" position={[-0.9, 0.65, -2.8]} width={1.1} disabled={state.lane <= -1} onClick={() => dispatch({ type: 'lane', delta: -1 })} />

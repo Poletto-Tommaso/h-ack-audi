@@ -1,0 +1,7 @@
+Audi A3 2021 trim
+Author: WillisChiejina (https://sketchfab.com/WillisChiejina)
+Source: https://sketchfab.com/3d-models/audi-a3-2021-trim-bb52322182cb47848a6b6ffd7b03bf87
+License (source metadata, retained without interpretation): CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+Derived from Desktop/a3 sedan models/audi_a3_2021_trim.glb. Meshopt compression, lossless WebP texture encoding (max 2048 px), compatible mesh joining; original source untouched.
+Thumbnail rendered in Blender from a decoded inspection copy.

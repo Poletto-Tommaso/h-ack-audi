@@ -1,0 +1,7 @@
+Audi A1 Quattro (A1II)
+Author: GT Cars: Hyperspeed (https://sketchfab.com/Car2022)
+Source: https://sketchfab.com/3d-models/audi-a1-quattro-a1ii-c0ca74fba3b24326b898bfc556909b57
+License (source metadata, retained without interpretation): CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+Derived from Desktop/a1 gialla model/audi_a1_quattro_a1ii.glb. Meshopt compression, lossless WebP texture encoding (max 2048 px), compatible mesh joining; original source untouched.
+Thumbnail rendered in Blender from a decoded inspection copy.

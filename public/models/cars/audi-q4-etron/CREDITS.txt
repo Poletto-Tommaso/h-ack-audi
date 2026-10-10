@@ -1,0 +1,7 @@
+2022 Audi Q4
+Author: Res1n (https://sketchfab.com/Res1n)
+Source: https://sketchfab.com/3d-models/2022-audi-q4-9458517778a34458b16194cca6f39e1d
+License (source metadata, retained without interpretation): CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+Derived from Desktop/q4 models/2022_audi_q4.glb. Meshopt compression, lossless WebP texture encoding (max 2048 px), compatible mesh joining; original source untouched.
+Thumbnail rendered in Blender from a decoded inspection copy.

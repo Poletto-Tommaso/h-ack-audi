@@ -1,0 +1,2943 @@
+{
+  "roots": [
+    {
+      "path": "/Users/lollo/Desktop",
+      "exists": true
+    },
+    {
+      "path": "/Users/lollo/Library/Mobile Documents/com~apple~CloudDocs/Desktop",
+      "exists": false
+    }
+  ],
+  "folders": [
+    {
+      "name": "a1 gialla model",
+      "formats": {
+        ".usdz": 1,
+        ".zip": 1,
+        ".jpeg": 3,
+        ".png": 2,
+        ".txt": 1,
+        ".bin": 1,
+        ".gltf": 1,
+        ".glb": 1
+      },
+      "files": [
+        {
+          "path": "a1 gialla model/audi-a1-quattro-a1ii/source/2021+Audi+A1+S-Line.zip",
+          "bytes": 21015578,
+          "archivedModels": [
+            "model.dae"
+          ]
+        },
+        {
+          "path": "a1 gialla model/audi-a1-quattro-a1ii/textures/_2021_Audi_A1_S-Line_BrakeRotors1.jpeg",
+          "bytes": 281442
+        },
+        {
+          "path": "a1 gialla model/audi-a1-quattro-a1ii/textures/_2021_Audi_A1_S-Line_Tires.jpeg",
+          "bytes": 441432
+        },
+        {
+          "path": "a1 gialla model/audi-a1-quattro-a1ii/textures/texture.png",
+          "bytes": 45436
+        },
+        {
+          "path": "a1 gialla model/audi_a1_quattro_a1ii/license.txt",
+          "bytes": 724
+        },
+        {
+          "path": "a1 gialla model/audi_a1_quattro_a1ii/scene.bin",
+          "bytes": 44816572
+        },
+        {
+          "path": "a1 gialla model/audi_a1_quattro_a1ii/scene.gltf",
+          "bytes": 49066,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "GT Cars: Hyperspeed (https://sketchfab.com/Car2022)",
+                "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+                "source": "https://sketchfab.com/3d-models/audi-a1-quattro-a1ii-c0ca74fba3b24326b898bfc556909b57",
+                "title": "Audi A1 Quattro (A1II)"
+              },
+              "generator": "Sketchfab-16.59.0",
+              "version": "2.0"
+            },
+            "dependencies": [
+              {
+                "uri": "scene.bin",
+                "exists": true
+              },
+              {
+                "uri": "textures/2021_Audi_A1_S-Line_BrakeRotors1_baseColor.jpeg",
+                "exists": true
+              },
+              {
+                "uri": "textures/material_baseColor.png",
+                "exists": true
+              }
+            ],
+            "embeddedImages": 0,
+            "images": 2,
+            "triangles": 971556,
+            "primitives": 38,
+            "materials": 24,
+            "extensionsRequired": []
+          },
+          "sha256": "354dea4c720cc339d394ecd8069c2214b1b434d63a27fff62cc8f966b5365c04"
+        },
+        {
+          "path": "a1 gialla model/audi_a1_quattro_a1ii/textures/2021_Audi_A1_S-Line_BrakeRotors1_baseColor.jpeg",
+          "bytes": 377901
+        },
+        {
+          "path": "a1 gialla model/audi_a1_quattro_a1ii/textures/material_baseColor.png",
+          "bytes": 45259
+        },
+        {
+          "path": "a1 gialla model/audi_a1_quattro_a1ii.glb",
+          "bytes": 45267524,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "GT Cars: Hyperspeed (https://sketchfab.com/Car2022)",
+                "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+                "source": "https://sketchfab.com/3d-models/audi-a1-quattro-a1ii-c0ca74fba3b24326b898bfc556909b57",
+                "title": "Audi A1 Quattro (A1II)"
+              },
+              "generator": "Sketchfab-16.59.0",
+              "version": "2.0"
+            },
+            "dependencies": [],
+            "embeddedImages": 2,
+            "images": 2,
+            "triangles": 971556,
+            "primitives": 38,
+            "materials": 24,
+            "extensionsRequired": []
+          },
+          "sha256": "6fb2fb3b491f60db02dae943a64b354687601ab37b440bc0e0c09049a86dc62d"
+        }
+      ]
+    },
+    {
+      "name": "a3 sedan models",
+      "formats": {
+        ".usdz": 1,
+        ".glb": 2,
+        ".png": 30,
+        ".jpeg": 1,
+        ".txt": 1,
+        ".bin": 1,
+        ".gltf": 1
+      },
+      "files": [
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/source/Audi A3.glb",
+          "bytes": 31299492,
+          "analysis": {
+            "asset": {
+              "generator": "Khronos glTF Blender I/O v4.0.44",
+              "version": "2.0"
+            },
+            "dependencies": [],
+            "embeddedImages": 12,
+            "images": 12,
+            "triangles": 194324,
+            "primitives": 37,
+            "materials": 21,
+            "extensionsRequired": []
+          },
+          "sha256": "23226d34bfe5f45cd056e06be14be39037be24f9150f854634531b1444804b1f"
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/Number Plate WC_0.png",
+          "bytes": 53106
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/audi_a3_rim_wip_base_color_2.png",
+          "bytes": 771881
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/audi_a3_rim_wip_metallic-audi_a3_rim_wip_roughness_3@channel.png",
+          "bytes": 18807
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/audi_a3_rim_wip_normal_combined_1.png",
+          "bytes": 704083
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/audi_emblem_base_color_5.png",
+          "bytes": 25160
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/audi_emblem_metallic-audi_emblem_roughness_6@channels=B.png",
+          "bytes": 7254
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/audi_emblem_metallic-audi_emblem_roughness_6@channels=G.png",
+          "bytes": 9721
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/audi_emblem_normal_4.png",
+          "bytes": 24163
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/internal_ground_ao_texture.jpeg",
+          "bytes": 21265
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/tyre_albedo_7@channels=A.png",
+          "bytes": 82586
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/tyre_albedo_9@channels=G.png",
+          "bytes": 82586
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/tyre_normal_8.png",
+          "bytes": 3100442
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/wheel_albedo_11.png",
+          "bytes": 866452
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/wheel_metallic-wheel_roughness_12@channels=B.png",
+          "bytes": 73665
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/wheel_metallic-wheel_roughness_12@channels=G.png",
+          "bytes": 628762
+        },
+        {
+          "path": "a3 sedan models/audi-a3-2021-trim/textures/wheel_normal_10.png",
+          "bytes": 1333931
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/license.txt",
+          "bytes": 712
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/scene.bin",
+          "bytes": 7246032
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/scene.gltf",
+          "bytes": 86150,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "WillisChiejina (https://sketchfab.com/WillisChiejina)",
+                "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+                "source": "https://sketchfab.com/3d-models/audi-a3-2021-trim-bb52322182cb47848a6b6ffd7b03bf87",
+                "title": "Audi A3 2021 trim"
+              },
+              "generator": "Sketchfab-16.85.0",
+              "version": "2.0"
+            },
+            "dependencies": [
+              {
+                "uri": "scene.bin",
+                "exists": true
+              },
+              {
+                "uri": "textures/plate_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/plate_specularf0.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/audi_a3_rim_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/audi_a3_rim_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/audi_a3_rim_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/audi_emblem_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/audi_emblem_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/audi_emblem_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/tyre_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/tyre_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/tyre_specularf0.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/wheel_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/wheel_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/wheel_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/wheel_specularf0.png",
+                "exists": true
+              }
+            ],
+            "embeddedImages": 0,
+            "images": 15,
+            "triangles": 194324,
+            "primitives": 37,
+            "materials": 21,
+            "extensionsRequired": []
+          },
+          "sha256": "6f1771d6b027ef2472d75dc0b6f312aba003395d0025b832d6b4d6d343d66c3f"
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/audi_a3_rim_baseColor.png",
+          "bytes": 725700
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/audi_a3_rim_metallicRoughness.png",
+          "bytes": 1443158
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/audi_a3_rim_normal.png",
+          "bytes": 713289
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/audi_emblem_baseColor.png",
+          "bytes": 23367
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/audi_emblem_metallicRoughness.png",
+          "bytes": 20285
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/audi_emblem_normal.png",
+          "bytes": 22688
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/plate_baseColor.png",
+          "bytes": 68713
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/plate_specularf0.png",
+          "bytes": 41018
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/tyre_metallicRoughness.png",
+          "bytes": 87512
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/tyre_normal.png",
+          "bytes": 623234
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/tyre_specularf0.png",
+          "bytes": 108960
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/wheel_baseColor.png",
+          "bytes": 787459
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/wheel_metallicRoughness.png",
+          "bytes": 973107
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/wheel_normal.png",
+          "bytes": 1111799
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim/textures/wheel_specularf0.png",
+          "bytes": 553399
+        },
+        {
+          "path": "a3 sedan models/audi_a3_2021_trim.glb",
+          "bytes": 14599800,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "WillisChiejina (https://sketchfab.com/WillisChiejina)",
+                "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+                "source": "https://sketchfab.com/3d-models/audi-a3-2021-trim-bb52322182cb47848a6b6ffd7b03bf87",
+                "title": "Audi A3 2021 trim"
+              },
+              "generator": "Sketchfab-16.85.0",
+              "version": "2.0"
+            },
+            "dependencies": [],
+            "embeddedImages": 15,
+            "images": 15,
+            "triangles": 194324,
+            "primitives": 37,
+            "materials": 21,
+            "extensionsRequired": []
+          },
+          "sha256": "1851b28b0f5ad195d279a4ed21f58c5ff9c236950ea0d5ee9119679f4ac72242"
+        }
+      ]
+    },
+    {
+      "name": "a5 sportback sline model",
+      "formats": {
+        ".usdz": 1,
+        ".glb": 2,
+        ".jpeg": 8,
+        ".png": 2,
+        ".txt": 1,
+        ".bin": 1,
+        ".gltf": 1
+      },
+      "files": [
+        {
+          "path": "a5 sportback sline model/audi-a5-sportback-s-line-2021/source/Audi A5 Sportback S-Line - 2021 .glb",
+          "bytes": 29459500,
+          "analysis": {
+            "asset": {
+              "version": "2.0",
+              "generator": "THREE.GLTFExporter"
+            },
+            "dependencies": [],
+            "embeddedImages": 5,
+            "images": 5,
+            "triangles": 950856,
+            "primitives": 978,
+            "materials": 30,
+            "extensionsRequired": []
+          },
+          "sha256": "3fac3be3a2a9c2dba5c07e69049c340253a60458c2a467fef5625808b402f7dc"
+        },
+        {
+          "path": "a5 sportback sline model/audi-a5-sportback-s-line-2021/textures/gltf_embedded_0.jpeg",
+          "bytes": 1263533
+        },
+        {
+          "path": "a5 sportback sline model/audi-a5-sportback-s-line-2021/textures/gltf_embedded_1.jpeg",
+          "bytes": 555141
+        },
+        {
+          "path": "a5 sportback sline model/audi-a5-sportback-s-line-2021/textures/gltf_embedded_2.jpeg",
+          "bytes": 705
+        },
+        {
+          "path": "a5 sportback sline model/audi-a5-sportback-s-line-2021/textures/gltf_embedded_3.jpeg",
+          "bytes": 700
+        },
+        {
+          "path": "a5 sportback sline model/audi-a5-sportback-s-line-2021/textures/gltf_embedded_4.png",
+          "bytes": 31049
+        },
+        {
+          "path": "a5 sportback sline model/audi_a5_sportback_s_line_-_2021/license.txt",
+          "bytes": 762
+        },
+        {
+          "path": "a5 sportback sline model/audi_a5_sportback_s_line_-_2021/scene.bin",
+          "bytes": 33240968
+        },
+        {
+          "path": "a5 sportback sline model/audi_a5_sportback_s_line_-_2021/scene.gltf",
+          "bytes": 1581210,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "Unn Interativa (https://sketchfab.com/unninterativa)",
+                "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+                "source": "https://sketchfab.com/3d-models/audi-a5-sportback-s-line-2021-aa9b8d495d324fa1adfe6eab519e21a9",
+                "title": "Audi A5 Sportback S Line - 2021"
+              },
+              "generator": "Sketchfab-15.32.0",
+              "version": "2.0"
+            },
+            "dependencies": [
+              {
+                "uri": "scene.bin",
+                "exists": true
+              },
+              {
+                "uri": "textures/2021_Audi_A5_Sportback_S-Line_Tires_baseColor.jpeg",
+                "exists": true
+              },
+              {
+                "uri": "textures/2021_Audi_A5_Sportback_S-Line_BrakeRotors1_baseColor.jpeg",
+                "exists": true
+              },
+              {
+                "uri": "textures/2021_Audi_A5_Sportback_S-Line_BrakeRotors1_0_baseColor.jpeg",
+                "exists": true
+              },
+              {
+                "uri": "textures/2021_Audi_A5_Sportback_S-Line_BrakeRotors1_1_baseColor.jpeg",
+                "exists": true
+              },
+              {
+                "uri": "textures/material_baseColor.png",
+                "exists": true
+              }
+            ],
+            "embeddedImages": 0,
+            "images": 5,
+            "triangles": 950856,
+            "primitives": 978,
+            "materials": 30,
+            "extensionsRequired": []
+          },
+          "sha256": "0e70cc39491cff86db7e8d0f44a59f06776f4202d2fd85dc4377111f7e46b847"
+        },
+        {
+          "path": "a5 sportback sline model/audi_a5_sportback_s_line_-_2021/textures/2021_Audi_A5_Sportback_S-Line_BrakeRotors1_0_baseColor.jpeg",
+          "bytes": 326
+        },
+        {
+          "path": "a5 sportback sline model/audi_a5_sportback_s_line_-_2021/textures/2021_Audi_A5_Sportback_S-Line_BrakeRotors1_1_baseColor.jpeg",
+          "bytes": 326
+        },
+        {
+          "path": "a5 sportback sline model/audi_a5_sportback_s_line_-_2021/textures/2021_Audi_A5_Sportback_S-Line_BrakeRotors1_baseColor.jpeg",
+          "bytes": 383181
+        },
+        {
+          "path": "a5 sportback sline model/audi_a5_sportback_s_line_-_2021/textures/2021_Audi_A5_Sportback_S-Line_Tires_baseColor.jpeg",
+          "bytes": 795829
+        },
+        {
+          "path": "a5 sportback sline model/audi_a5_sportback_s_line_-_2021/textures/material_baseColor.png",
+          "bytes": 17610
+        },
+        {
+          "path": "a5 sportback sline model/audi_a5_sportback_s_line_-_2021.glb",
+          "bytes": 35336736,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "Unn Interativa (https://sketchfab.com/unninterativa)",
+                "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+                "source": "https://sketchfab.com/3d-models/audi-a5-sportback-s-line-2021-aa9b8d495d324fa1adfe6eab519e21a9",
+                "title": "Audi A5 Sportback S Line - 2021"
+              },
+              "generator": "Sketchfab-15.32.0",
+              "version": "2.0"
+            },
+            "dependencies": [],
+            "embeddedImages": 5,
+            "images": 5,
+            "triangles": 950856,
+            "primitives": 978,
+            "materials": 30,
+            "extensionsRequired": []
+          },
+          "sha256": "33a33c5df6bb727c578368a772a84cd749eb63a5ed07bf849de6c2916f0f3edf"
+        }
+      ]
+    },
+    {
+      "name": "a6 limuousine",
+      "formats": {
+        ".usdz": 1,
+        ".zip": 1,
+        ".png": 34,
+        ".txt": 1,
+        ".bin": 1,
+        ".gltf": 1,
+        ".glb": 1
+      },
+      "files": [
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/source/Audi A6 C8 Limousine.zip",
+          "bytes": 93277762,
+          "archivedModels": [
+            "Audi A6 C8 Limousine.fbx"
+          ]
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/Plate.png",
+          "bytes": 3444
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/Plate_N.png",
+          "bytes": 8892
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/a6_wheel.png",
+          "bytes": 401004
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/a6_wheel_nm.png",
+          "bytes": 589096
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/a6_wheel_spec.png",
+          "bytes": 620739
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/alu.png",
+          "bytes": 86
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/alu_n.png",
+          "bytes": 599877
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/chrome.png",
+          "bytes": 86
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/leather_black.png",
+          "bytes": 33934
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/led.png",
+          "bytes": 96
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/lights_blanches.png",
+          "bytes": 2261507
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/lights_rouges.png",
+          "bytes": 1001064
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/paint.png",
+          "bytes": 2320
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/plastic3.png",
+          "bytes": 15613
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/plastic3_n.png",
+          "bytes": 85678
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/vitres feux.png",
+          "bytes": 109
+        },
+        {
+          "path": "a6 limuousine/audi-a6-c8-limousine/textures/vitres_exterieur.png",
+          "bytes": 81
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/license.txt",
+          "bytes": 429
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/scene.bin",
+          "bytes": 27336360
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/scene.gltf",
+          "bytes": 460678,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "KOElkast1007 (https://sketchfab.com/koelkastasbers)",
+                "license": "SKETCHFAB Standard (https://sketchfab.com/licenses)",
+                "source": "https://sketchfab.com/3d-models/audi-a6-c8-limousine-c9b7cf9c176b458785edd0b12e235364",
+                "title": "Audi A6 C8 Limousine"
+              },
+              "generator": "Sketchfab-16.60.0",
+              "version": "2.0"
+            },
+            "dependencies": [
+              {
+                "uri": "scene.bin",
+                "exists": true
+              },
+              {
+                "uri": "textures/lights_blanches_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/material_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/plastic3.002_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/plastic3.002_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/chrome_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/leather_black_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/lights_rouges.001_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/vitres_exterieur_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/material_18_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/material_18_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/vitres_feux_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/paint_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/a6_wheel_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/a6_wheel_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/a6_wheel_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Plate_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Plate_normal.png",
+                "exists": true
+              }
+            ],
+            "embeddedImages": 0,
+            "images": 17,
+            "triangles": 301880,
+            "primitives": 135,
+            "materials": 37,
+            "extensionsRequired": []
+          },
+          "sha256": "f2b73a76bc9c4e95b2accccc12462edc1ce47da5019cfa28c5fb7e97fad2bc02"
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/Plate_baseColor.png",
+          "bytes": 5272
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/Plate_normal.png",
+          "bytes": 5042
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/a6_wheel_baseColor.png",
+          "bytes": 338624
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/a6_wheel_metallicRoughness.png",
+          "bytes": 291569
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/a6_wheel_normal.png",
+          "bytes": 631528
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/chrome_baseColor.png",
+          "bytes": 87
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/leather_black_baseColor.png",
+          "bytes": 34681
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/lights_blanches_baseColor.png",
+          "bytes": 2013233
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/lights_rouges.001_baseColor.png",
+          "bytes": 725657
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/material_18_baseColor.png",
+          "bytes": 87
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/material_18_normal.png",
+          "bytes": 581229
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/material_baseColor.png",
+          "bytes": 97
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/paint_baseColor.png",
+          "bytes": 920
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/plastic3.002_baseColor.png",
+          "bytes": 18260
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/plastic3.002_normal.png",
+          "bytes": 96892
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/vitres_exterieur_baseColor.png",
+          "bytes": 82
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine/textures/vitres_feux_baseColor.png",
+          "bytes": 97
+        },
+        {
+          "path": "a6 limuousine/audi_a6_c8_limousine.glb",
+          "bytes": 32333376,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "KOElkast1007 (https://sketchfab.com/koelkastasbers)",
+                "license": "SKETCHFAB Standard (https://sketchfab.com/licenses)",
+                "source": "https://sketchfab.com/3d-models/audi-a6-c8-limousine-c9b7cf9c176b458785edd0b12e235364",
+                "title": "Audi A6 C8 Limousine"
+              },
+              "generator": "Sketchfab-16.60.0",
+              "version": "2.0"
+            },
+            "dependencies": [],
+            "embeddedImages": 17,
+            "images": 17,
+            "triangles": 301880,
+            "primitives": 135,
+            "materials": 37,
+            "extensionsRequired": []
+          },
+          "sha256": "89949c41e16735438a3991f9823a71bd69f2dd6d90b2f278deecdb7466c679d6"
+        }
+      ]
+    },
+    {
+      "name": "e tron gt audi models",
+      "formats": {
+        ".usdz": 1,
+        ".glb": 2,
+        ".png": 87,
+        ".txt": 1,
+        ".bin": 1,
+        ".gltf": 1
+      },
+      "files": [
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/source/audi_rs_e-tron_gt.glb",
+          "bytes": 30251504,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "GT Cars: Hyperspeed (https://sketchfab.com/Car2022)",
+                "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+                "source": "https://sketchfab.com/3d-models/audi-rs-e-tron-gt-c0b994232c654f1d8366a296e85fb7ba",
+                "title": "Audi RS e-tron GT"
+              },
+              "generator": "Sketchfab-16.59.0",
+              "version": "2.0"
+            },
+            "dependencies": [],
+            "embeddedImages": 54,
+            "images": 54,
+            "triangles": 477314,
+            "primitives": 69,
+            "materials": 43,
+            "extensionsRequired": []
+          },
+          "sha256": "4fc3b5d08f9b333a35d13f4f8a659257d71392174fb55239766a22e3c46a184a"
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_0.png",
+          "bytes": 3506
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_10.png",
+          "bytes": 1352
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_11.png",
+          "bytes": 66251
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_12.png",
+          "bytes": 42227
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_14.png",
+          "bytes": 61912
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_15.png",
+          "bytes": 89569
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_18.png",
+          "bytes": 951645
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_2.png",
+          "bytes": 1459
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_21.png",
+          "bytes": 114
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_23.png",
+          "bytes": 13549
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_25.png",
+          "bytes": 60420
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_27.png",
+          "bytes": 159547
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_29.png",
+          "bytes": 100
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_30.png",
+          "bytes": 216973
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_31.png",
+          "bytes": 172246
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_32.png",
+          "bytes": 293764
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_33.png",
+          "bytes": 175309
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_37.png",
+          "bytes": 218064
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_38.png",
+          "bytes": 43063
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_4.png",
+          "bytes": 160791
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_40.png",
+          "bytes": 575255
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_41.png",
+          "bytes": 96
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_43.png",
+          "bytes": 83
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_44.png",
+          "bytes": 697199
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_46.png",
+          "bytes": 912309
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_48.png",
+          "bytes": 23232
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_5.png",
+          "bytes": 429771
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_50.png",
+          "bytes": 174695
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_51.png",
+          "bytes": 679108
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_53.png",
+          "bytes": 711615
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_7.png",
+          "bytes": 33818
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_9@channels=B.png",
+          "bytes": 481
+        },
+        {
+          "path": "e tron gt audi models/audi-rs-e-tron-gt/textures/gltf_embedded_9@channels=G.png",
+          "bytes": 160
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/license.txt",
+          "bytes": 684
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/scene.bin",
+          "bytes": 17766152
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/scene.gltf",
+          "bytes": 142031,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "dannzjs (https://sketchfab.com/dannzjs)",
+                "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+                "source": "https://sketchfab.com/3d-models/audi-rs-e-tron-gt-ae717c5decea453fa3e1c9a4b274386c",
+                "title": "Audi RS e-tron GT"
+              },
+              "generator": "Sketchfab-16.61.0",
+              "version": "2.0"
+            },
+            "dependencies": [
+              {
+                "uri": "scene.bin",
+                "exists": true
+              },
+              {
+                "uri": "textures/Bodyshell1Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Bodyshell1Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Bodyshellb0021Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Bodyshellb0021Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Bodyshellb0031Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Bodyshellb0151Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Bodyshellb0151Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Bodyshellb0051Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Bodyshellb0051Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0041Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0041Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0021Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0081Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0101Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0051Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0061Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0111Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0111Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0131Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0151Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0151Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0321Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Interior0321Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Low1Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Low1Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/TrunkPart0161Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/TrunkPart0161Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Color1Mtl_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/FrontRightDoorPart0061Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/RearRightDoorPart0101Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/RearRightDoorPart0061Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/RearRightDoorPart0091Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/RimPart0011Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/RimPart0021Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/SwPart0011Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/SwPart0041Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/SwPart0041Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/SwPart0051Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/SwPart0071Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/SwPart0091Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/SwPart1Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/TrunkPart0051Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/TrunkPart0051Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/SwPart0101Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/SwPart0101Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/TrunkPart0121Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/TrunkPart0151Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/TrunkPart0151Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/TrunkPart0191Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/TrunkPart0191Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/TrunkPartRear1Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/TrunkPartReverse1Mtl_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/TrunkPartReverse1Mtl_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Yel1Mtl_baseColor.png",
+                "exists": true
+              }
+            ],
+            "embeddedImages": 0,
+            "images": 54,
+            "triangles": 477314,
+            "primitives": 69,
+            "materials": 43,
+            "extensionsRequired": []
+          },
+          "sha256": "4f49cd04344013566b94baafc6647e586808ca42c083aad009d533c6db1d226a"
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Bodyshell1Mtl_baseColor.png",
+          "bytes": 3475
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Bodyshell1Mtl_emissive.png",
+          "bytes": 119
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Bodyshellb0021Mtl_baseColor.png",
+          "bytes": 1497
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Bodyshellb0021Mtl_emissive.png",
+          "bytes": 1373
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Bodyshellb0031Mtl_baseColor.png",
+          "bytes": 154684
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Bodyshellb0051Mtl_baseColor.png",
+          "bytes": 421795
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Bodyshellb0051Mtl_emissive.png",
+          "bytes": 364944
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Bodyshellb0151Mtl_baseColor.png",
+          "bytes": 32218
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Bodyshellb0151Mtl_emissive.png",
+          "bytes": 28548
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Color1Mtl_metallicRoughness.png",
+          "bytes": 172
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/FrontRightDoorPart0061Mtl_baseColor.png",
+          "bytes": 910
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0021Mtl_baseColor.png",
+          "bytes": 70748
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0041Mtl_baseColor.png",
+          "bytes": 38285
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0041Mtl_emissive.png",
+          "bytes": 38359
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0051Mtl_baseColor.png",
+          "bytes": 60812
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0061Mtl_baseColor.png",
+          "bytes": 85392
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0081Mtl_emissive.png",
+          "bytes": 855641
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0101Mtl_emissive.png",
+          "bytes": 182681
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0111Mtl_baseColor.png",
+          "bytes": 979442
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0111Mtl_emissive.png",
+          "bytes": 853500
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0131Mtl_emissive.png",
+          "bytes": 410173
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0151Mtl_baseColor.png",
+          "bytes": 118
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0151Mtl_emissive.png",
+          "bytes": 104
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0321Mtl_baseColor.png",
+          "bytes": 12442
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Interior0321Mtl_emissive.png",
+          "bytes": 5522
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Low1Mtl_baseColor.png",
+          "bytes": 56712
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Low1Mtl_emissive.png",
+          "bytes": 46990
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/RearRightDoorPart0061Mtl_baseColor.png",
+          "bytes": 159288
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/RearRightDoorPart0091Mtl_emissive.png",
+          "bytes": 1210640
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/RearRightDoorPart0101Mtl_baseColor.png",
+          "bytes": 104
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/RimPart0011Mtl_baseColor.png",
+          "bytes": 198420
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/RimPart0021Mtl_baseColor.png",
+          "bytes": 187941
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/SwPart0011Mtl_baseColor.png",
+          "bytes": 300717
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/SwPart0041Mtl_baseColor.png",
+          "bytes": 148339
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/SwPart0041Mtl_emissive.png",
+          "bytes": 80192
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/SwPart0051Mtl_emissive.png",
+          "bytes": 84
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/SwPart0071Mtl_emissive.png",
+          "bytes": 84
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/SwPart0091Mtl_baseColor.png",
+          "bytes": 206676
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/SwPart0101Mtl_baseColor.png",
+          "bytes": 42868
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/SwPart0101Mtl_emissive.png",
+          "bytes": 34036
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/SwPart1Mtl_baseColor.png",
+          "bytes": 722005
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/TrunkPart0051Mtl_baseColor.png",
+          "bytes": 97
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/TrunkPart0051Mtl_emissive.png",
+          "bytes": 84
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/TrunkPart0121Mtl_baseColor.png",
+          "bytes": 84
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/TrunkPart0151Mtl_baseColor.png",
+          "bytes": 685317
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/TrunkPart0151Mtl_emissive.png",
+          "bytes": 640294
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/TrunkPart0161Mtl_baseColor.png",
+          "bytes": 890226
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/TrunkPart0161Mtl_emissive.png",
+          "bytes": 820714
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/TrunkPart0191Mtl_baseColor.png",
+          "bytes": 21203
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/TrunkPart0191Mtl_emissive.png",
+          "bytes": 1489
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/TrunkPartRear1Mtl_baseColor.png",
+          "bytes": 174802
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/TrunkPartReverse1Mtl_baseColor.png",
+          "bytes": 659251
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/TrunkPartReverse1Mtl_emissive.png",
+          "bytes": 608911
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt/textures/Yel1Mtl_baseColor.png",
+          "bytes": 696974
+        },
+        {
+          "path": "e tron gt audi models/audi_rs_e-tron_gt.glb",
+          "bytes": 31049916,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "dannzjs (https://sketchfab.com/dannzjs)",
+                "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+                "source": "https://sketchfab.com/3d-models/audi-rs-e-tron-gt-ae717c5decea453fa3e1c9a4b274386c",
+                "title": "Audi RS e-tron GT"
+              },
+              "generator": "Sketchfab-16.61.0",
+              "version": "2.0"
+            },
+            "dependencies": [],
+            "embeddedImages": 54,
+            "images": 54,
+            "triangles": 477314,
+            "primitives": 69,
+            "materials": 43,
+            "extensionsRequired": []
+          },
+          "sha256": "cd575475a89ed10703dc97d0e50c3a025a485261e06748059b87ffa883b642e1"
+        }
+      ]
+    },
+    {
+      "name": "q4 models",
+      "formats": {
+        ".usdz": 1,
+        ".txt": 1,
+        ".bin": 1,
+        ".gltf": 1,
+        ".glb": 1,
+        ".mtl": 1,
+        ".obj": 1
+      },
+      "files": [
+        {
+          "path": "q4 models/2022_audi_q4/license.txt",
+          "bytes": 656
+        },
+        {
+          "path": "q4 models/2022_audi_q4/scene.bin",
+          "bytes": 12887448
+        },
+        {
+          "path": "q4 models/2022_audi_q4/scene.gltf",
+          "bytes": 65736,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "Res1n (https://sketchfab.com/Res1n)",
+                "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+                "source": "https://sketchfab.com/3d-models/2022-audi-q4-9458517778a34458b16194cca6f39e1d",
+                "title": "2022 Audi Q4"
+              },
+              "generator": "Sketchfab-0.3.0",
+              "version": "2.0"
+            },
+            "dependencies": [
+              {
+                "uri": "scene.bin",
+                "exists": true
+              }
+            ],
+            "embeddedImages": 0,
+            "images": 0,
+            "triangles": 462200,
+            "primitives": 47,
+            "materials": 26,
+            "extensionsRequired": []
+          },
+          "sha256": "87ed5e2b9b8f4ae50b1caff333d2ce9f39173b99cd3c9627454934574b6e06fc"
+        },
+        {
+          "path": "q4 models/2022_audi_q4.glb",
+          "bytes": 12925528,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "Res1n (https://sketchfab.com/Res1n)",
+                "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+                "source": "https://sketchfab.com/3d-models/2022-audi-q4-9458517778a34458b16194cca6f39e1d",
+                "title": "2022 Audi Q4"
+              },
+              "generator": "Sketchfab-0.3.0",
+              "version": "2.0"
+            },
+            "dependencies": [],
+            "embeddedImages": 0,
+            "images": 0,
+            "triangles": 462200,
+            "primitives": 47,
+            "materials": 26,
+            "extensionsRequired": []
+          },
+          "sha256": "faade9e6f1f1f86f59d9e70088cd7e94c3cedbc9c95c1fa9291ef6428f5c8723"
+        },
+        {
+          "path": "q4 models/source-2-Audi Q4 2022/Audi Q4 2022.mtl",
+          "bytes": 5432,
+          "analysis": {
+            "dependencies": [
+              {
+                "uri": "C:/56d444ccef8143119b6cbb6f4d85d178.jpeg",
+                "exists": false
+              },
+              {
+                "uri": "C:/56d444ccef8143119b6cbb6f4d85d178.jpeg",
+                "exists": false
+              },
+              {
+                "uri": "C:/fffe8031164a48f4b02863b7d95b698a.jpeg",
+                "exists": false
+              },
+              {
+                "uri": "C:/fffe8031164a48f4b02863b7d95b698a.jpeg",
+                "exists": false
+              }
+            ]
+          }
+        },
+        {
+          "path": "q4 models/source-2-Audi Q4 2022/Audi Q4 2022.obj",
+          "bytes": 35555958,
+          "analysis": {
+            "dependencies": [
+              {
+                "uri": "Audi Q4 2022.mtl",
+                "exists": true
+              }
+            ]
+          },
+          "sha256": "4bbebeeccff21995358e882af9d5e5d39308588f1b46241aa2cc2b9d41442194"
+        }
+      ]
+    },
+    {
+      "name": "q5 model",
+      "formats": {
+        ".zip": 1,
+        ".png": 82,
+        ".usdz": 1,
+        ".txt": 1,
+        ".bin": 1,
+        ".gltf": 1,
+        ".glb": 1
+      },
+      "files": [
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/source/FINAL_MOEDL_Q5.zip",
+          "bytes": 17426788,
+          "archivedModels": [
+            "FINAL_MOEDL_Q5.fbx"
+          ]
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Brake_D.png",
+          "bytes": 35472
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Brake_N.png",
+          "bytes": 14418
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Brake_RME.png",
+          "bytes": 10892
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Cabin_D.png",
+          "bytes": 234743
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Cabin_Grid_A_D.png",
+          "bytes": 29084
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Cabin_Grid_A_N.png",
+          "bytes": 69931
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Cabin_Grid_B_D.png",
+          "bytes": 7433
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Cabin_Grid_B_N.png",
+          "bytes": 12224
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Cabin_Grid_B_RME.png",
+          "bytes": 3863
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Cabin_N.png",
+          "bytes": 213953
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Cabin_RME.png",
+          "bytes": 120024
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Dashboard_E.png",
+          "bytes": 151993
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Engine_AO.png",
+          "bytes": 333400
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Engine_D.png",
+          "bytes": 139890
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Engine_N.png",
+          "bytes": 224712
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Engine_RME.png",
+          "bytes": 20217
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Grid_B_D.png",
+          "bytes": 2586
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Grid_B_N.png",
+          "bytes": 7017
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Grid_B_RME.png",
+          "bytes": 647
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Leather_A_D.png",
+          "bytes": 32380
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Leather_A_N.png",
+          "bytes": 82336
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Light_D.png",
+          "bytes": 119927
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Light_E.png",
+          "bytes": 130847
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Light_N.png",
+          "bytes": 173537
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Light_RME.png",
+          "bytes": 20618
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Logo_D.png",
+          "bytes": 29790
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Logo_N.png",
+          "bytes": 56950
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Logo_RME.png",
+          "bytes": 11217
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Rim_D.png",
+          "bytes": 26899
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Rim_N.png",
+          "bytes": 57787
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Suspension_D.png",
+          "bytes": 14370
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Suspension_N.png",
+          "bytes": 71618
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Suspension_RME.png",
+          "bytes": 14187
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Tyre_D.png",
+          "bytes": 17052
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Tyre_N.png",
+          "bytes": 223808
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_Tyre_RME.png",
+          "bytes": 187305
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/T_tongyong_D.png",
+          "bytes": 12054
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/common_carbon05_black_diff.png",
+          "bytes": 734
+        },
+        {
+          "path": "q5 model/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi/textures/common_carbon05_norm.png",
+          "bytes": 14342
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/license.txt",
+          "bytes": 890
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/scene.bin",
+          "bytes": 17826100
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/scene.gltf",
+          "bytes": 524677,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "Ddiaz Design (https://sketchfab.com/ddiaz-design)",
+                "license": "CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)",
+                "source": "https://sketchfab.com/3d-models/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi-60fea790b21c48bcb379be2a6d2c1f81",
+                "title": "2023 Audi Q5 quattro S line Premium Plus 45 TFSI"
+              },
+              "generator": "Sketchfab-16.75.0",
+              "version": "2.0"
+            },
+            "dependencies": [
+              {
+                "uri": "scene.bin",
+                "exists": true
+              },
+              {
+                "uri": "textures/Int_Leather_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Int_Leather_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Int_Leather_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/carbon_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/carbon_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Leather_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Leather_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Suspension_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Suspension_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Suspension_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Engine_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Engine_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Light_Map_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Light_Map_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Light_Map_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Light_Map_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Int_Transp_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/DashBoard_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/DashBoard_emissive.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Logo_Mat_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Logo_Mat_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Logo_Mat_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Audigrid_B_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Audigrid_B_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Audigrid_B_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Int_Plastic_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Engine_Mat_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Engine_Mat_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Engine_Mat_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/Engine_B_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/AudiGrid_Ext_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/AudiGrid_Ext_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/AudiGrid_Ext_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/grille_a_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/grille_a_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/AudiBreaks_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/AudiBreaks_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/AudiBreaks_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/AudiTyer_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/AudiTyer_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/AudiTyer_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/AudiRim_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/AudiRim_normal.png",
+                "exists": true
+              }
+            ],
+            "embeddedImages": 0,
+            "images": 43,
+            "triangles": 370347,
+            "primitives": 223,
+            "materials": 26,
+            "extensionsRequired": []
+          },
+          "sha256": "6c8f769716cc35c00c059ed14856f871c366db073af83b7eeefa867945192f88"
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/AudiBreaks_baseColor.png",
+          "bytes": 24582
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/AudiBreaks_metallicRoughness.png",
+          "bytes": 4266
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/AudiBreaks_normal.png",
+          "bytes": 8028
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/AudiGrid_Ext_baseColor.png",
+          "bytes": 1129
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/AudiGrid_Ext_metallicRoughness.png",
+          "bytes": 440
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/AudiGrid_Ext_normal.png",
+          "bytes": 5895
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/AudiRim_baseColor.png",
+          "bytes": 20686
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/AudiRim_normal.png",
+          "bytes": 47261
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/AudiTyer_baseColor.png",
+          "bytes": 16885
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/AudiTyer_metallicRoughness.png",
+          "bytes": 14861
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/AudiTyer_normal.png",
+          "bytes": 185132
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Audigrid_B_baseColor.png",
+          "bytes": 2963
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Audigrid_B_metallicRoughness.png",
+          "bytes": 4128
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Audigrid_B_normal.png",
+          "bytes": 10781
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/DashBoard_baseColor.png",
+          "bytes": 147882
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/DashBoard_emissive.png",
+          "bytes": 147882
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Engine_B_baseColor.png",
+          "bytes": 146822
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Engine_Mat_baseColor.png",
+          "bytes": 117025
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Engine_Mat_metallicRoughness.png",
+          "bytes": 8830
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Engine_Mat_normal.png",
+          "bytes": 212049
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Engine_baseColor.png",
+          "bytes": 8689
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Engine_metallicRoughness.png",
+          "bytes": 122222
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Int_Leather_baseColor.png",
+          "bytes": 244300
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Int_Leather_metallicRoughness.png",
+          "bytes": 69872
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Int_Leather_normal.png",
+          "bytes": 186000
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Int_Plastic_baseColor.png",
+          "bytes": 181676
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Int_Transp_emissive.png",
+          "bytes": 181676
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Leather_baseColor.png",
+          "bytes": 30005
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Leather_normal.png",
+          "bytes": 75768
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Light_Map_baseColor.png",
+          "bytes": 93370
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Light_Map_emissive.png",
+          "bytes": 88952
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Light_Map_metallicRoughness.png",
+          "bytes": 9134
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Light_Map_normal.png",
+          "bytes": 153275
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Logo_Mat_baseColor.png",
+          "bytes": 25967
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Logo_Mat_metallicRoughness.png",
+          "bytes": 3426
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Logo_Mat_normal.png",
+          "bytes": 48358
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Suspension_baseColor.png",
+          "bytes": 12346
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Suspension_metallicRoughness.png",
+          "bytes": 6955
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/Suspension_normal.png",
+          "bytes": 59335
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/carbon_baseColor.png",
+          "bytes": 757
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/carbon_normal.png",
+          "bytes": 15555
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/grille_a_baseColor.png",
+          "bytes": 27159
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi/textures/grille_a_normal.png",
+          "bytes": 59382
+        },
+        {
+          "path": "q5 model/2023_audi_q5_quattro_s_line_premium_plus_45_tfsi.glb",
+          "bytes": 20973232,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "Ddiaz Design (https://sketchfab.com/ddiaz-design)",
+                "license": "CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)",
+                "source": "https://sketchfab.com/3d-models/2023-audi-q5-quattro-s-line-premium-plus-45-tfsi-60fea790b21c48bcb379be2a6d2c1f81",
+                "title": "2023 Audi Q5 quattro S line Premium Plus 45 TFSI"
+              },
+              "generator": "Sketchfab-16.75.0",
+              "version": "2.0"
+            },
+            "dependencies": [],
+            "embeddedImages": 43,
+            "images": 43,
+            "triangles": 370347,
+            "primitives": 223,
+            "materials": 26,
+            "extensionsRequired": []
+          },
+          "sha256": "049a98330ebee97cdeb68c5d9f1e03319a7d943250f0ef7d4077d2fb79614c42"
+        }
+      ]
+    },
+    {
+      "name": "rs3 models",
+      "formats": {
+        ".glb": 2,
+        ".png": 21,
+        ".usdz": 1,
+        ".txt": 1,
+        ".bin": 1,
+        ".gltf": 1
+      },
+      "files": [
+        {
+          "path": "rs3 models/2021-audi-rs3-sportback/source/2021 Audi RS3 Sportback.glb",
+          "bytes": 2943780,
+          "analysis": {
+            "asset": {
+              "version": "2.0",
+              "generator": "Khronos glTF Blender I/O v1.2.20"
+            },
+            "dependencies": [],
+            "embeddedImages": 10,
+            "images": 10,
+            "triangles": 47320,
+            "primitives": 72,
+            "materials": 10,
+            "extensionsRequired": []
+          },
+          "sha256": "454b824f0d6591bc57a051f6369a43f1eaed969a32cae937c679cdf2383cfd92"
+        },
+        {
+          "path": "rs3 models/2021-audi-rs3-sportback/textures/2021_audi_rs3_sportsback_badges.etc_9.png",
+          "bytes": 16719
+        },
+        {
+          "path": "rs3 models/2021-audi-rs3-sportback/textures/2021_audi_rs3_sportsback_cab.etc_6.png",
+          "bytes": 93712
+        },
+        {
+          "path": "rs3 models/2021-audi-rs3-sportback/textures/2021_audi_rs3_sportsback_ext_glacier_white.etc_5.png",
+          "bytes": 303124
+        },
+        {
+          "path": "rs3 models/2021-audi-rs3-sportback/textures/2021_audi_rs3_sportsback_lights.etc_4.png",
+          "bytes": 159185
+        },
+        {
+          "path": "rs3 models/2021-audi-rs3-sportback/textures/2021_audi_rs3_sportsback_misc.etc_0.png",
+          "bytes": 96678
+        },
+        {
+          "path": "rs3 models/2021-audi-rs3-sportback/textures/2021_audi_rs3_sportsback_wheel.etc_1.png",
+          "bytes": 15901
+        },
+        {
+          "path": "rs3 models/2021-audi-rs3-sportback/textures/car_chassis.etc_8.png",
+          "bytes": 89685
+        },
+        {
+          "path": "rs3 models/2021-audi-rs3-sportback/textures/car_rotor_03.etc_2.png",
+          "bytes": 30257
+        },
+        {
+          "path": "rs3 models/2021-audi-rs3-sportback/textures/car_tyre_tread.etc_3.png",
+          "bytes": 51098
+        },
+        {
+          "path": "rs3 models/2021-audi-rs3-sportback/textures/car_windows.etc_7.png",
+          "bytes": 2597
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/license.txt",
+          "bytes": 778
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/scene.bin",
+          "bytes": 2245792
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/scene.gltf",
+          "bytes": 136526,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "OUTPISTON (https://sketchfab.com/outpiston)",
+                "license": "CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)",
+                "source": "https://sketchfab.com/3d-models/2021-audi-rs3-sportback-96fdd80794004df28342b8e035348801",
+                "title": "2021 Audi RS3 Sportback"
+              },
+              "generator": "Sketchfab-16.87.0",
+              "version": "2.0"
+            },
+            "dependencies": [
+              {
+                "uri": "scene.bin",
+                "exists": true
+              },
+              {
+                "uri": "textures/2021_audi_rs3_sportsback_misc.etc.png_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/2021_audi_rs3_sportsback_wheel.etc.png_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/car_rotor_03.etc.png_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/car_tyre_tread.etc.png_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/2021_audi_rs3_sportsback_lights.etc.png_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/2021_audi_rs3_sportsback_ext_glacier_white.etc.png_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/2021_audi_rs3_sportsback_cab.etc.png_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/car_windows.etc.png_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/car_windows.etc.png_transmission.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/car_chassis.etc.png_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/2021_audi_rs3_sportsback_badges.etc.png_baseColor.png",
+                "exists": true
+              }
+            ],
+            "embeddedImages": 0,
+            "images": 11,
+            "triangles": 47320,
+            "primitives": 72,
+            "materials": 10,
+            "extensionsRequired": []
+          },
+          "sha256": "bc425c34cb46b4b54cdef06080ba0fc13071204cf4b038fb8d49d5f626bbf958"
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/textures/2021_audi_rs3_sportsback_badges.etc.png_baseColor.png",
+          "bytes": 16694
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/textures/2021_audi_rs3_sportsback_cab.etc.png_baseColor.png",
+          "bytes": 88792
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/textures/2021_audi_rs3_sportsback_ext_glacier_white.etc.png_baseColor.png",
+          "bytes": 294274
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/textures/2021_audi_rs3_sportsback_lights.etc.png_baseColor.png",
+          "bytes": 151868
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/textures/2021_audi_rs3_sportsback_misc.etc.png_baseColor.png",
+          "bytes": 91509
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/textures/2021_audi_rs3_sportsback_wheel.etc.png_baseColor.png",
+          "bytes": 15886
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/textures/car_chassis.etc.png_baseColor.png",
+          "bytes": 92784
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/textures/car_rotor_03.etc.png_baseColor.png",
+          "bytes": 30856
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/textures/car_tyre_tread.etc.png_baseColor.png",
+          "bytes": 22429
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/textures/car_windows.etc.png_baseColor.png",
+          "bytes": 2432
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback/textures/car_windows.etc.png_transmission.png",
+          "bytes": 1369
+        },
+        {
+          "path": "rs3 models/2021_audi_rs3_sportback.glb",
+          "bytes": 3133120,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "OUTPISTON (https://sketchfab.com/outpiston)",
+                "license": "CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)",
+                "source": "https://sketchfab.com/3d-models/2021-audi-rs3-sportback-96fdd80794004df28342b8e035348801",
+                "title": "2021 Audi RS3 Sportback"
+              },
+              "generator": "Sketchfab-16.87.0",
+              "version": "2.0"
+            },
+            "dependencies": [],
+            "embeddedImages": 11,
+            "images": 11,
+            "triangles": 47320,
+            "primitives": 72,
+            "materials": 10,
+            "extensionsRequired": []
+          },
+          "sha256": "a9a774b5073ec16ed1c6abbb8fd6e476e9519134252dd887daf7b1f28108669a"
+        }
+      ]
+    },
+    {
+      "name": "rs6 model",
+      "formats": {
+        ".zip": 1,
+        ".png": 74,
+        ".usdz": 1,
+        ".txt": 1,
+        ".bin": 1,
+        ".gltf": 1,
+        ".glb": 1
+      },
+      "files": [
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/source/FINAL_MODEL_1GT.zip",
+          "bytes": 11475732,
+          "archivedModels": [
+            "FINAL_MODEL_1GT.fbx"
+          ]
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_BadgeA_Normal.png",
+          "bytes": 42650
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_CalliperA_Zone_Diffuse.png",
+          "bytes": 91
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_CalliperA_Zone_Material.png",
+          "bytes": 102
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_EngineA_DiffuseAOSO.png",
+          "bytes": 149192
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_EngineA_Normal.png",
+          "bytes": 92527
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille1A_DiffuseAOSO.png",
+          "bytes": 3681
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille1A_Normal.png",
+          "bytes": 5456
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille2A_DiffuseAOSO.png",
+          "bytes": 1894
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille3A_DiffuseAOSO.png",
+          "bytes": 2004
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille3A_Normal.png",
+          "bytes": 3748
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille4A_DiffuseAOSO.png",
+          "bytes": 1454
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille4A_Normal.png",
+          "bytes": 10290
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille5A_DiffuseAOSO.png",
+          "bytes": 907
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille5A_Normal.png",
+          "bytes": 1815
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille6A_DiffuseAOSO.png",
+          "bytes": 1897
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille7A_DiffuseAOSO.png",
+          "bytes": 1115
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille7A_Normal.png",
+          "bytes": 1615
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille8A_DiffuseAOSO.png",
+          "bytes": 1961
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille8A_Normal.png",
+          "bytes": 3357
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Grille9A_Normal.png",
+          "bytes": 3429
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_InteriorA_DiffuseAOSO.png",
+          "bytes": 168911
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_InteriorA_Normal.png",
+          "bytes": 122871
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_InteriorTillingA_DiffuseAOSO.png",
+          "bytes": 1490
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_InteriorTillingA_Normal.png",
+          "bytes": 2336
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_LightA_Diffuse.png",
+          "bytes": 133304
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_LightA_Material.png",
+          "bytes": 28425
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_ManufacturerPlateA_Diffuse.png",
+          "bytes": 4682
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Wheel1A_Normal.png",
+          "bytes": 42380
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Wheel1B_DiffuseAOSO.png",
+          "bytes": 71827
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Audi_RS6AvantGT_2024_Wheel1B_Material.png",
+          "bytes": 87837
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/BadgeA_DiffuseAOSO.png",
+          "bytes": 61532
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/CalliperBadgeA_Diffuse.png",
+          "bytes": 4444
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Global_Texture_Coloured_Diffuse.png",
+          "bytes": 2841
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/Global_Texture_Coloured_Material.png",
+          "bytes": 2817
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/OEM_Audi_RS6AvantGTMono_1_Diffuse.png",
+          "bytes": 210
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/common_carbon05_black_diff.png",
+          "bytes": 734
+        },
+        {
+          "path": "rs6 model/2024-audi-rs6-avant-gt/textures/common_carbon05_norm.png",
+          "bytes": 14342
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/license.txt",
+          "bytes": 786
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/scene.bin",
+          "bytes": 13455392
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/scene.gltf",
+          "bytes": 2296606,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "Ddiaz Design (https://sketchfab.com/ddiaz-design)",
+                "license": "CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)",
+                "source": "https://sketchfab.com/3d-models/2024-audi-rs6-avant-gt-e74dce0d5b294381a979627513ca9f30",
+                "title": "2024 Audi RS6 Avant GT"
+              },
+              "generator": "Sketchfab-16.60.0",
+              "version": "2.0"
+            },
+            "dependencies": [
+              {
+                "uri": "scene.bin",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024_CallipersCalliperBad_74a765c1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024_CallipersCalliperA_Z_e6b395c1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024_CallipersCalliperA_Z_e6b395c1_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024_Wheel1A_3D_3DWheel1B_a4ed461_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024_Wheel1A_3D_3DWheel1B_a4ed461_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024_Wheel1A_3D_3DWheel1B_a4ed461_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024BadgeA_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024BadgeA_Material1_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024Carbon1_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024Carbon1_Material1_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024Coloured_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024Coloured_Material1_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024EngineA_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024EngineA_Material1_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleAlpha3A_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleAlpha3A_Material1_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha1A_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha1A_Material1_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha2A_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha2A_Material1_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha4A_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha4A_Material1_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha5A_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha5A_Material1_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha6A_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha7A_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha7A_Material1_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha8A_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha8A_Material1_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024InteriorTillingA_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024InteriorTillingA_Material1_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024InteriorA_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024InteriorA_Material1_normal.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024LightA_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024LightA_Material1_metallicRoughness.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024ManufacturerPlateA_Material1_baseColor.png",
+                "exists": true
+              },
+              {
+                "uri": "textures/aAudi_RS6AvantGTRewardRecycled_2024Paint_Material1_baseColor.png",
+                "exists": true
+              }
+            ],
+            "embeddedImages": 0,
+            "images": 37,
+            "triangles": 286404,
+            "primitives": 989,
+            "materials": 25,
+            "extensionsRequired": []
+          },
+          "sha256": "0f6eaceec84011422012acf559fb568a13c259ce330061d00f34cdb2ec87e94a"
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024BadgeA_Material1_baseColor.png",
+          "bytes": 60148
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024BadgeA_Material1_normal.png",
+          "bytes": 40657
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024Carbon1_Material1_baseColor.png",
+          "bytes": 757
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024Carbon1_Material1_normal.png",
+          "bytes": 15555
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024Coloured_Material1_baseColor.png",
+          "bytes": 2662
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024Coloured_Material1_metallicRoughness.png",
+          "bytes": 1845
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024EngineA_Material1_baseColor.png",
+          "bytes": 99179
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024EngineA_Material1_normal.png",
+          "bytes": 94663
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleAlpha3A_Material1_baseColor.png",
+          "bytes": 780
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleAlpha3A_Material1_normal.png",
+          "bytes": 3461
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha1A_Material1_baseColor.png",
+          "bytes": 1252
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha1A_Material1_normal.png",
+          "bytes": 5884
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha2A_Material1_baseColor.png",
+          "bytes": 622
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha2A_Material1_normal.png",
+          "bytes": 3173
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha4A_Material1_baseColor.png",
+          "bytes": 484
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha4A_Material1_normal.png",
+          "bytes": 8485
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha5A_Material1_baseColor.png",
+          "bytes": 609
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha5A_Material1_normal.png",
+          "bytes": 1600
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha6A_Material1_baseColor.png",
+          "bytes": 644
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha7A_Material1_baseColor.png",
+          "bytes": 566
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha7A_Material1_normal.png",
+          "bytes": 1465
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha8A_Material1_baseColor.png",
+          "bytes": 559
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024GrilleNoAlpha8A_Material1_normal.png",
+          "bytes": 3262
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024InteriorA_Material1_baseColor.png",
+          "bytes": 101232
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024InteriorA_Material1_normal.png",
+          "bytes": 122561
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024InteriorTillingA_Material1_baseColor.png",
+          "bytes": 533
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024InteriorTillingA_Material1_normal.png",
+          "bytes": 2173
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024LightA_Material1_baseColor.png",
+          "bytes": 136669
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024LightA_Material1_metallicRoughness.png",
+          "bytes": 5324
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024ManufacturerPlateA_Material1_baseColor.png",
+          "bytes": 5003
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024Paint_Material1_baseColor.png",
+          "bytes": 166
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024_CallipersCalliperA_Z_e6b395c1_baseColor.png",
+          "bytes": 89
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024_CallipersCalliperA_Z_e6b395c1_metallicRoughness.png",
+          "bytes": 107
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024_CallipersCalliperBad_74a765c1_baseColor.png",
+          "bytes": 4508
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024_Wheel1A_3D_3DWheel1B_a4ed461_baseColor.png",
+          "bytes": 49348
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024_Wheel1A_3D_3DWheel1B_a4ed461_metallicRoughness.png",
+          "bytes": 36489
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt/textures/aAudi_RS6AvantGTRewardRecycled_2024_Wheel1A_3D_3DWheel1B_a4ed461_normal.png",
+          "bytes": 42621
+        },
+        {
+          "path": "rs6 model/2024_audi_rs6_avant_gt.glb",
+          "bytes": 15690772,
+          "analysis": {
+            "asset": {
+              "extras": {
+                "author": "Ddiaz Design (https://sketchfab.com/ddiaz-design)",
+                "license": "CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)",
+                "source": "https://sketchfab.com/3d-models/2024-audi-rs6-avant-gt-e74dce0d5b294381a979627513ca9f30",
+                "title": "2024 Audi RS6 Avant GT"
+              },
+              "generator": "Sketchfab-16.60.0",
+              "version": "2.0"
+            },
+            "dependencies": [],
+            "embeddedImages": 37,
+            "images": 37,
+            "triangles": 286404,
+            "primitives": 989,
+            "materials": 25,
+            "extensionsRequired": []
+          },
+          "sha256": "4421dc8ee268b6029df430a735864ecfb17a0212baa022736cd416f6f1ca59fb"
+        }
+      ]
+    }
+  ]
+}
